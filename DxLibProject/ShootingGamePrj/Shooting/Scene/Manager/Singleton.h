@@ -2,8 +2,6 @@
 
 #include <type_traits>
 
-using namespace std;
-
 namespace manager
 {
 	template<typename Type>
@@ -12,7 +10,7 @@ namespace manager
 	public:
 		static Type& Instance()
 		{
-			static_assert(is_base_of<Singleton, Type>::value);
+			static_assert(std::is_base_of<Singleton, Type>::value);
 
 			static Type SingleInstance;
 			return SingleInstance;
@@ -22,6 +20,7 @@ namespace manager
 		Singleton() = default;
 
 	private:
+		//èdï°ñhé~
 		Singleton(const Singleton&) = delete;
 		Singleton& operator=(const Singleton&) = delete;
 		Singleton(Singleton&&) = delete;

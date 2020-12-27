@@ -27,6 +27,11 @@ namespace game
 	}
 	void Stage01::CalkTask()
 	{
-		
+		ImpackCalk();
+
+	}
+	void Stage01::ImpackCalk()
+	{
+
 	}
 }

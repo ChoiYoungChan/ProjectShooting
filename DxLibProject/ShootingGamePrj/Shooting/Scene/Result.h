@@ -1,6 +1,7 @@
 #pragma once
 
 #include "BaseSceneController.h"
+#include "Manager/InputKey.h"
 
 namespace scene
 {
