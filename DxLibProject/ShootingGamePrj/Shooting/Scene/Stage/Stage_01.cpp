@@ -17,14 +17,14 @@ namespace game
 
 	void Stage01::Finalize()
 	{
-		
+		stagemanager._stagestate = StageState::Stage02;
 	}
 	/// <summary>
 	/// Playerとモンスターを表示するための関数
 	/// </summary>
 	void Stage01::Draw()
 	{
-		player.Update();							//プレイヤーの移動や表示などを適用する
+		player.Update();						//プレイヤーの移動や表示などを適用する
 		enemy.Update();							//モンスターの移動や表示などを適用する
 	}
 	/// <summary>
@@ -52,9 +52,9 @@ namespace game
 		{
 			printfDx("Impact!\n");
 			player.Player_HP -= 1;
-			if (player.Player_HP == 0)
+			if (player.Player_HP <= 0)
 			{
-				printfDx("U Lose!!");
+				printfDx("U LOSE !\n");
 			}
 		}
 		if (distance_02 < (player.player_bullet_radius + enemy.monster_radius))
@@ -63,11 +63,11 @@ namespace game
 		}
 		if (distance_03 < (player.player_radius + enemy.monster_bullet_radius))
 		{
-			printfDx("distance_03 = %d", distance_03);
+			printfDx("distance_03Impact!\n");
 			player.Player_HP -= 1;
-			if (player.Player_HP == 0)
+			if (player.Player_HP <= 0)
 			{
-				printfDx("U Lose!!");
+				printfDx("U LOSE !\n");
 			}
 		}
 	}

@@ -19,7 +19,8 @@ namespace scene
 		virtual ~BaseScene() = default;
 
 	private:
-		BaseScene(const BaseScene&) = delete;					//重複禁止
+		//重複禁止
+		BaseScene(const BaseScene&) = delete;
 		BaseScene& operator = (const BaseScene&) = delete;
 		BaseScene(BaseScene&&) = delete;
 		BaseScene& operator = (BaseScene&&) = delete;
@@ -29,19 +30,23 @@ namespace scene
 		virtual void Update() = 0;
 		virtual void Finalize() = 0;
 
-		State state() const										//現在のState
+		//現在のState
+		State state() const
 		{
 			return _state;
 		}
-		State Nextstate() const									//次のState
+		//次のState
+		State Nextstate() const
 		{
 			return _NextState;
 		}
-		void SetNextState(const State next)						//次のStateを指定
+		//次のStateを指定
+		void SetNextState(const State next)
 		{
 			_NextState = next;
 		}
-		bool isSetNextState() const						//State::None以外が返ってきたらこのシーンに差し替える
+		//State::None以外が返ってきたらこのシーンに差し替えることを判別
+		bool isSetNextState() const
 		{
 			return (_NextState != State::None);
 		}
@@ -53,14 +58,15 @@ namespace scene
 	class MakeScene
 	{
 	public:
+		MakeScene() = delete;
+		~MakeScene() = delete;
+
 		// Sceneクラス インスタンス生成
 		static std::unique_ptr<BaseScene> create(const State state);
 
 	private:
-		MakeScene() = delete;
-		~MakeScene() = delete;
-
-		MakeScene(const MakeScene&) = delete;									//重複禁止
+		//重複禁止
+		MakeScene(const MakeScene&) = delete;
 		MakeScene& operatior(const MakeScene&) = delete;
 		MakeScene(MakeScene&&) = delete;
 		MakeScene& operatior(MakeScene&&) = delete;

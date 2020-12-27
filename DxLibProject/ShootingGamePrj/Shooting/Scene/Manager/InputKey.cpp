@@ -3,6 +3,10 @@
 namespace keyboard
 {
 	int key[256];
+
+	/// <summary>
+	/// “ü—Í‚ğó‚¯‚½Key‚ªw’è‚µ‚½Key‚È‚Ì‚©‚ğ”»’è‚·‚éŠÖ”
+	/// </summary>
 	void KeyUpdate()
 	{
 		char tmpkey[256];
@@ -15,6 +19,12 @@ namespace keyboard
 				key[index] = 0;
 		}
 	}
+
+	/// <summary>
+	/// Key‚Ì“ü—Í‚ğó‚¯‚éŠÖ”
+	/// </summary>
+	/// <param name="keyvalue">ó‚¯æ‚Á‚½Key‚Ì’l</param>
+	/// <returns></returns>
 	int GetKey(int keyvalue)
 	{
 		return key[keyvalue];

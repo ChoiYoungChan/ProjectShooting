@@ -8,6 +8,7 @@ namespace play_user
 		speed = 15;
 		Player_HP = 3;
 	}
+
 	/// <summary>
 	/// プレイヤーのコントロールと表示すること
 	/// ZKeyを押した際に弾を打つこと
@@ -17,6 +18,7 @@ namespace play_user
 		CalkTask();
 		DrawTask();
 	}
+
 	/// <summary>
 	/// プレイヤーの移動制限
 	/// </summary>
