@@ -12,6 +12,7 @@ namespace scene
 	game::Stage01 stage01;
 	game::Stage02 stage02;
 	game::Stage03 stage03;
+
 	/// <summary>
 	/// 最初に全てのステージをInitializeする。
 	/// </summary>
@@ -40,6 +41,9 @@ namespace scene
 
 		case StageState::Stage03:
 			stage03.Update();
+			break;
+		case StageState::Result:
+			SetNextState(State::Result);
 			break;
 		}
 	}
