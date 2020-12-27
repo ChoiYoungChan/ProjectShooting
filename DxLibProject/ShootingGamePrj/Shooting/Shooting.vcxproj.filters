@@ -84,9 +84,6 @@
     <ClCompile Include="Game\Stage\Stage.cpp">
       <Filter>ソース ファイル\Game\Stage</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Source\BossMonster.cpp">
-      <Filter>ソース ファイル\Game\Source</Filter>
-    </ClCompile>
     <ClCompile Include="Manager\PlayerManager.cpp">
       <Filter>ソース ファイル\Manager</Filter>
     </ClCompile>
@@ -149,11 +146,11 @@
     <ClInclude Include="Game\Stage\Stage.h">
       <Filter>ソース ファイル\Game\Stage</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Source\BossMonster.h">
-      <Filter>ソース ファイル\Game\Source</Filter>
-    </ClInclude>
     <ClInclude Include="Manager\PlayerManager.h">
       <Filter>ソース ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>ソース ファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

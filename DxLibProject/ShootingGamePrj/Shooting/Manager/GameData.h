@@ -1,16 +1,14 @@
 #pragma once
+//--------------------------------------------------------------
+//------------include Header
 #include "Singleton.h"
 
 namespace data
 {
-	class GameData
+	class GameData : public singleton::Singleton<GameData>
 	{
 	public:
-		GameData()
-		{
-			Score = 0;
-			Player_HP = 30;
-		}
+		GameData() = default;
 		~GameData() = default;
 	public:
 		void Reset();
@@ -18,7 +16,9 @@ namespace data
 	public:
 		int Score;
 		int Player_HP;
-
+		int Stage_Level;
 	private:
+		friend class singleton::Singleton<GameData>;
 	};
+
 }

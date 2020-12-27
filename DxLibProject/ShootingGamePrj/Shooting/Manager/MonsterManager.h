@@ -1,11 +1,8 @@
 #pragma once
-
+//--------------------------------------------------------------
+//------------include Header
 #include "Singleton.h"
 #include "..\Game\Source\Monster.h"
-#include "..\Game\Source\BossMonster.h"
-
-#define ENEMY_MAX 6
-#define BOSS 1
 
 namespace monstermanager
 {
@@ -18,20 +15,26 @@ namespace monstermanager
 	public:
 		void Initialize();
 		void DrawTask();
-		void MonsterGetPos(int, int, int, int);
-		void BossGetPos(int, int, int, int);
+		void MonsterGetPos(int, int, int, int, int, int);
 		void CalkTask();
+		monster::Monster* FindFreeMonster();
+		monster::Monster* GetEnemy(int);
 		void Finalize();
-
-		monster::Monster * GetEnemy(int);
-		monster::BossMonster* GetBoss();
-
+		
 	private:
-		monster::Monster* _p_enemy[ENEMY_MAX];
-		monster::BossMonster* _p_boss;
+		monster::Monster _enemy[ENEMY_MAX];
 
-		int target_x, target_y;
-		int MiddleBoss_img, LastBoss_img;
+		enum ImageState
+		{
+			Normal_monster = 0,
+			Middle_Boss_monster,
+			Last_Boss_monster,
+			Image_Max
+		};
+		ImageState _image = ImageState::Normal_monster;
+
+		int _img[ImageState::Image_Max];
+
 	private:
 		friend class singleton::Singleton<MonsterManager>;
 

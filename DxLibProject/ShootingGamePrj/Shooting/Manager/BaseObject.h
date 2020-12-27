@@ -1,16 +1,14 @@
 #pragma once
+//--------------------------------------------------------------
+//------------include Header
 #include <math.h>
-
-#define BULLET_MAX 1000
-
-extern int WINDOW_SIZE_X;
-extern int WINDOW_SIZE_Y;
+#include "..\System.h"
 
 namespace base
 {
 	enum TYPE
 	{
-		Player,
+		Player = 0,
 		Enemy,
 		PlayerBullet,
 		EnemyBullet
@@ -19,11 +17,7 @@ namespace base
 	class BaseObject
 	{
 	public:
-		BaseObject()
-		{
-			pos_x = -100;
-			pos_y = -100;
-		}
+		BaseObject() = default;
 		BaseObject(TYPE type)
 		{
 			_type = type;
@@ -33,12 +27,10 @@ namespace base
 
 	public:
 		TYPE _type;
-		int _radius = 10;
-		const int damage = 10;
-		int pos_x, pos_y;
-		bool isActive = false, isPlayer = true;
-		float distance;
-		int bullet_shooter;
+		const int _damage = 10;
+		int _pos_x, _pos_y, _speed, _radius;
+		bool _isActive = false, _isPlayer = true;
+		float _distance;
 
 	public:
 		bool ConfirmImpact(BaseObject* otherobj);

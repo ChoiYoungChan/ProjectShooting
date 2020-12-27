@@ -155,7 +155,6 @@
     <ClCompile Include="Game\Scene\Result.cpp" />
     <ClCompile Include="Game\Scene\StageManager.cpp" />
     <ClCompile Include="Game\Scene\Title.cpp" />
-    <ClCompile Include="Game\Source\BossMonster.cpp" />
     <ClCompile Include="Game\Source\Bullet.cpp" />
     <ClCompile Include="Game\Source\BulletHell.cpp" />
     <ClCompile Include="Game\Source\Monster.cpp" />
@@ -178,7 +177,6 @@
     <ClInclude Include="Game\Scene\SceneStateh.h" />
     <ClInclude Include="Game\Scene\StageManager.h" />
     <ClInclude Include="Game\Scene\Title.h" />
-    <ClInclude Include="Game\Source\BossMonster.h" />
     <ClInclude Include="Game\Source\Bullet.h" />
     <ClInclude Include="Game\Source\BulletHell.h" />
     <ClInclude Include="Game\Source\Monster.h" />
@@ -192,6 +190,7 @@
     <ClInclude Include="Manager\MonsterManager.h" />
     <ClInclude Include="Manager\PlayerManager.h" />
     <ClInclude Include="Manager\Singleton.h" />
+    <ClInclude Include="System.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resource\Bullet_0001.png" />

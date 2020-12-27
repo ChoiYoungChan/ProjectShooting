@@ -1,3 +1,5 @@
+//--------------------------------------------------------------
+//------------include Header
 #include "BaseObject.h"
 
 
@@ -5,8 +7,8 @@ namespace base
 {
 	bool BaseObject::ConfirmImpact(BaseObject* otherobj)
 	{
-		distance = sqrt(pow(pos_x - otherobj->pos_x,2) + pow(pos_y - otherobj->pos_y,2));
+		_distance = sqrt(pow(_pos_x - otherobj->_pos_x,2) + pow(_pos_y - otherobj->_pos_y,2));
 
-		return (distance < (this->_radius + otherobj->_radius));
+		return (_distance < (this->_radius + otherobj->_radius));
 	}
 }

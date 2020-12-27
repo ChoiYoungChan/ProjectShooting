@@ -16,8 +16,10 @@ namespace bullet
 	public:
 		Bullet()
 		{
-			isActive = false;
-			count = 0;
+			_isActive = false;
+
+			_radius = 25;
+			_speed = 30;
 		}
 
 		~Bullet() = default;
@@ -31,26 +33,21 @@ namespace bullet
 		void PlayerBulletUpdate();
 		void MonsterBulletUpdate();
 		void SetBullet(bool, int, int, int, int, double,int,int);
-		BulletHell _bullethell;
 
 	public:
 		//=========================================================================
 		//===============’e–‹‚ÌŒvZ‚Ég‚í‚ê‚é•Ï”
-		float monster_bullet_x, monster_bullet_y;				//’eŠÛ‚ÌÀ•W
-		float radi = 10;										//”¼Œa
-		float vec_radi = 1;										//”¼Œa‚Ì•Ï‰»
-		float theta = 1;										//Šp“x
-		float omega = (5.0f * PI/180.0f);					//ˆê‰ñ‚ÌˆÚ“®‚Å•Ï‰»‚·‚éŠp“x
-		float* speed_x_new, speed_y_new;
-		int target_pos_x, target_pos_y;
-		int speed = 15;
+		float _monster_bullet_x, _monster_bullet_y;				//’eŠÛ‚ÌÀ•W
+		float _radi = 10;										//”¼Œa
+		float _vec_radi = 1;										//”¼Œa‚Ì•Ï‰»
+		float _theta = 1;										//Šp“x
+		float _omega = (5.0f * PI/180.0f);					//ˆê‰ñ‚ÌˆÚ“®‚Å•Ï‰»‚·‚éŠp“x
+		float* _speed_x_new, _speed_y_new;
+		int _target_pos_x, _target_pos_y;
 		//=========================================================================
 
 	private:
-		int image, shooter;
-		const int bullet_speed = 30;
-		double bullet_size;
-		bool _isplayer;
-		int count;
+		int _image, _shooter;
+		double _bullet_size;
 	};
 }

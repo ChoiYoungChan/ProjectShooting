@@ -1,3 +1,5 @@
+//--------------------------------------------------------------
+//------------include Header
 #include "InputKey.h"
 
 namespace keyboard
@@ -28,6 +30,16 @@ namespace keyboard
 	int GetKey(int keyvalue)
 	{
 		return key[keyvalue];
+	}
+
+	/// <summary>
+/// Key‚Ì“ü—Í‚ğó‚¯‚éŠÖ”
+/// </summary>
+/// <param name="keyvalue">ó‚¯æ‚Á‚½Key‚Ì’l</param>
+/// <returns></returns>
+	bool GetKeyTrigger(int keyvalue)
+	{
+		return (key[keyvalue]==1)?(true):(false);
 	}
 
 }
