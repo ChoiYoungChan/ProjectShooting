@@ -104,6 +104,7 @@
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <AdditionalIncludeDirectories>D:\Test\C++\projectcpp\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -152,6 +153,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainManager.cpp" />
     <ClCompile Include="Scene\BaseSceneController.cpp" />
+    <ClCompile Include="Scene\Manager\InputKey.cpp" />
     <ClCompile Include="Scene\Option.cpp" />
     <ClCompile Include="Scene\Result.cpp" />
     <ClCompile Include="Scene\StageManager.cpp" />
@@ -159,12 +161,16 @@
     <ClCompile Include="Scene\Stage\Stage_02.cpp" />
     <ClCompile Include="Scene\Stage\Stage_03.cpp" />
     <ClCompile Include="Scene\Title.cpp" />
+    <ClCompile Include="Source\Monster.cpp" />
+    <ClCompile Include="Source\MonsterBullet.cpp" />
     <ClCompile Include="Source\Player.cpp" />
+    <ClCompile Include="Source\PlayerBullet.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainManager.h" />
-    <ClInclude Include="Manager\Singleton.h" />
     <ClInclude Include="Scene\BaseSceneController.h" />
+    <ClInclude Include="Scene\Manager\InputKey.h" />
+    <ClInclude Include="Scene\Manager\Singleton.h" />
     <ClInclude Include="Scene\Option.h" />
     <ClInclude Include="Scene\Result.h" />
     <ClInclude Include="Scene\SceneStateh.h" />
@@ -173,7 +179,10 @@
     <ClInclude Include="Scene\Stage\Stage_02.h" />
     <ClInclude Include="Scene\Stage\Stage_03.h" />
     <ClInclude Include="Scene\Title.h" />
+    <ClInclude Include="Source\Monster.h" />
+    <ClInclude Include="Source\MonsterBullet.h" />
     <ClInclude Include="Source\Player.h" />
+    <ClInclude Include="Source\PlayerBullet.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

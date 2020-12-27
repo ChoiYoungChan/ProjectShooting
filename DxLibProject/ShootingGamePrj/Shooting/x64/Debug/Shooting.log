@@ -1,72 +1,12 @@
-﻿  main.cpp
-  MainManager.cpp
-  BaseSceneController.cpp
-c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): error C2259: 'scene::Title': 抽象クラスをインスタンス化できません。
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 次のメンバーが原因です:
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 'void scene::BaseScene::Initialize(void)': は抽象型です
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.h(27): note: 'scene::BaseScene::Initialize' の宣言を確認してください
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 'void scene::BaseScene::Calculate(void)': は抽象型です
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.h(28): note: 'scene::BaseScene::Calculate' の宣言を確認してください
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 'void scene::BaseScene::Draw(void)': は抽象型です
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.h(29): note: 'scene::BaseScene::Draw' の宣言を確認してください
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 'void scene::BaseScene::finalize(void)': は抽象型です
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.h(30): note: 'scene::BaseScene::finalize' の宣言を確認してください
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.cpp(25): note: コンパイル対象の関数 テンプレート インスタンス化 'std::unique_ptr<scene::Title,std::default_delete<_Ty>> std::make_unique<scene::Title,,0>(void)' のリファレンスを確認してください
-          with
-          [
-              _Ty=scene::Title
-          ]
-c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): error C2259: 'scene::StageManager': 抽象クラスをインスタンス化できません。
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 次のメンバーが原因です:
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 'void scene::BaseScene::Initialize(void)': は抽象型です
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.h(27): note: 'scene::BaseScene::Initialize' の宣言を確認してください
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 'void scene::BaseScene::Calculate(void)': は抽象型です
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.h(28): note: 'scene::BaseScene::Calculate' の宣言を確認してください
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 'void scene::BaseScene::Draw(void)': は抽象型です
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.h(29): note: 'scene::BaseScene::Draw' の宣言を確認してください
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 'void scene::BaseScene::finalize(void)': は抽象型です
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.h(30): note: 'scene::BaseScene::finalize' の宣言を確認してください
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.cpp(28): note: コンパイル対象の関数 テンプレート インスタンス化 'std::unique_ptr<scene::StageManager,std::default_delete<_Ty>> std::make_unique<scene::StageManager,,0>(void)' のリファレンスを確認してください
-          with
-          [
-              _Ty=scene::StageManager
-          ]
-c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): error C2259: 'scene::Result': 抽象クラスをインスタンス化できません。
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 次のメンバーが原因です:
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 'void scene::BaseScene::Initialize(void)': は抽象型です
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.h(27): note: 'scene::BaseScene::Initialize' の宣言を確認してください
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 'void scene::BaseScene::Calculate(void)': は抽象型です
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.h(28): note: 'scene::BaseScene::Calculate' の宣言を確認してください
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 'void scene::BaseScene::Draw(void)': は抽象型です
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.h(29): note: 'scene::BaseScene::Draw' の宣言を確認してください
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 'void scene::BaseScene::finalize(void)': は抽象型です
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.h(30): note: 'scene::BaseScene::finalize' の宣言を確認してください
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.cpp(31): note: コンパイル対象の関数 テンプレート インスタンス化 'std::unique_ptr<scene::Result,std::default_delete<_Ty>> std::make_unique<scene::Result,,0>(void)' のリファレンスを確認してください
-          with
-          [
-              _Ty=scene::Result
-          ]
-c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): error C2259: 'scene::Option': 抽象クラスをインスタンス化できません。
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 次のメンバーが原因です:
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 'void scene::BaseScene::Initialize(void)': は抽象型です
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.h(27): note: 'scene::BaseScene::Initialize' の宣言を確認してください
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 'void scene::BaseScene::Calculate(void)': は抽象型です
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.h(28): note: 'scene::BaseScene::Calculate' の宣言を確認してください
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 'void scene::BaseScene::Draw(void)': は抽象型です
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.h(29): note: 'scene::BaseScene::Draw' の宣言を確認してください
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(2538): note: 'void scene::BaseScene::finalize(void)': は抽象型です
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.h(30): note: 'scene::BaseScene::finalize' の宣言を確認してください
-  d:\test\c++\projectcpp\dxlibproject\shooting\scene\basescenecontroller.cpp(34): note: コンパイル対象の関数 テンプレート インスタンス化 'std::unique_ptr<scene::Option,std::default_delete<_Ty>> std::make_unique<scene::Option,,0>(void)' のリファレンスを確認してください
-          with
-          [
-              _Ty=scene::Option
-          ]
-  Option.cpp
-  Result.cpp
-  StageManager.cpp
-  Stage_01.cpp
-  Stage_02.cpp
-  Stage_03.cpp
-  Title.cpp
+﻿  Stage_01.cpp
+d:\test\c++\projectcpp\dxlibproject\shootinggameprj\shooting\scene\stage\stage_01.cpp(39): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
+d:\test\c++\projectcpp\dxlibproject\shootinggameprj\shooting\scene\stage\stage_01.cpp(40): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
+d:\test\c++\projectcpp\dxlibproject\shootinggameprj\shooting\scene\stage\stage_01.cpp(41): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
+  MonsterBullet.cpp
+d:\test\c++\projectcpp\dxlibproject\shootinggameprj\shooting\source\monsterbullet.cpp(22): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+d:\test\c++\projectcpp\dxlibproject\shootinggameprj\shooting\source\monsterbullet.cpp(33): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+d:\test\c++\projectcpp\dxlibproject\shootinggameprj\shooting\source\monsterbullet.cpp(37): warning C4244: '+=': 'float' から 'int' への変換です。データが失われる可能性があります。
+d:\test\c++\projectcpp\dxlibproject\shootinggameprj\shooting\source\monsterbullet.cpp(38): warning C4244: '+=': 'float' から 'int' への変換です。データが失われる可能性があります。
   Player.cpp
   コードを生成中...
+  Shooting.vcxproj -> D:\Test\C++\projectcpp\DxLibProject\ShootingGamePrj\x64\Debug\Shooting.exe

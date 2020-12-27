@@ -40,7 +40,7 @@ void DrawTask();
 //=======Global Variable
 
 
-int WINDOW_SIZE_X = 480, WINDOW_SIZE_Y = 720;
+const int WINDOW_SIZE_X = 480, WINDOW_SIZE_Y = 720;
 int Player_img, Bullet_img;
 
 controller::PlayerController playerCon;

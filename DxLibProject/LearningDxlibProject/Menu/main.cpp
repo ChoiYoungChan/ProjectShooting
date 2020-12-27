@@ -6,7 +6,7 @@
 
 //=================================
 // function& struct
-int InputKey()
+void InputKey()
 {
 	char keyvalue[256];
 	GetHitKeyStateAll(keyvalue);
@@ -25,8 +25,6 @@ typedef struct
 
 }MenuElement_t;
 
-void InputTask();
-void MenuTask();
 //=================================
 // Global var
 int key[256];
@@ -35,8 +33,13 @@ int SelectNumber;
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
 	ChangeWindowMode(true);
-	SetDrawScreen(DX_SCREEN_BACK);
 	SetGraphMode(480,680,32);
+	if (DxLib_Init() == -1)
+	{
+		return -1;
+	}
+
+	
 
 	MenuElement_t MenuElement[5] =
 	{
@@ -48,8 +51,10 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 	};
 	SelectNumber = 0;
 
-	while (ProcessMessage() == 0 && InputKey() == 0)
+	while (ProcessMessage() == 0 && ClearDrawScreen() == 0)
 	{
+		SetDrawScreen(DX_SCREEN_BACK);
+		InputKey();
 		if (key[KEY_INPUT_DOWN] == 1)
 		{
 			SelectNumber = (SelectNumber + 1) % 5;
@@ -68,18 +73,9 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 			DrawFormatString(MenuElement[draw_menu].menu_pos_x, MenuElement[draw_menu].menu_pos_y,
 				             GetColor(255,255,255), MenuElement[draw_menu].name);
 		}
-
+		ScreenFlip();
 	}
 
 	DxLib_End();
 	return 0;
-}
-
-void InputTask()
-{
-	
-}
-void MenuTask()
-{
-	
 }
