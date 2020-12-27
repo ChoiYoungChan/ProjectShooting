@@ -12,6 +12,7 @@ namespace play_user
 			player_radius =	25;
 			player_bullet_radius = 30;
 			shoot_count = 0;
+
 			player_pos_x = 300;
 			player_pos_y = 600;
 			_WINDOW_SIZE_X = 720;
@@ -37,6 +38,8 @@ namespace play_user
 	private:
 
 		PlayerBullet shoot[50];
+		void CalkTask();
+		void DrawTask();
 
 	private:
 		int MAX_BULLET_COUNT;												//�e�ۂ̍ő吔

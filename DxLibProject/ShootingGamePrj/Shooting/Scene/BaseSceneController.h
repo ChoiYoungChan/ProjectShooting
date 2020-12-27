@@ -12,7 +12,10 @@ namespace scene
 	{
 	public:
 		BaseScene() = default;
-		BaseScene(const State state) : _state(state) {}
+		BaseScene(const State state)
+		{
+			_state = state;
+		}
 		virtual ~BaseScene() = default;
 
 	private:
@@ -26,21 +29,21 @@ namespace scene
 		virtual void Update() = 0;
 		virtual void Finalize() = 0;
 
-		State state() const										//State 取得
+		State state() const										//現在のState
 		{
 			return _state;
 		}
-		State Nextstate() const									//次の State 取得
+		State Nextstate() const									//次のState
 		{
 			return _NextState;
 		}
-		void SetNextState(const State next)
+		void SetNextState(const State next)						//次のStateを指定
 		{
 			_NextState = next;
 		}
-		bool isSetNextState() const						//State::Noneが以外が返ってきたらこのシーンに差し替える
+		bool isSetNextState() const						//State::None以外が返ってきたらこのシーンに差し替える
 		{
-			return (_NextState != State::None && _NextState != State::SceneCount);
+			return (_NextState != State::None);
 		}
 	private:
 		State _state = State::None;						//担当するシーン

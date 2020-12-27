@@ -16,7 +16,7 @@ namespace play_user
 		}
 		~PlayerBullet() = default;
 
-		void Initialize(int, int, int);
+		void Initialize(int, int);
 		void Update();
 		void Finalize();
 	public:

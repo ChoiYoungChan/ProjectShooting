@@ -6,9 +6,7 @@
 
 //--------------------------------------------------------------
 //------------function
-
 void SetWindowMode();
-void SetUpData();
 
 //--------------------------------------------------------------
 //------------Global Variable
@@ -20,7 +18,6 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 	SetBackgroundColor(0, 0, 0);
 	if (DxLib_Init() == -1) { return -1; }
 
-	SetUpData();
 	MainManager::MainManager& manager = MainManager::MainManager::Instance();
 
 	while (ScreenFlip() == 0 && ProcessMessage() == 0 && ClearDrawScreen() == 0)
@@ -48,14 +45,8 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 }
 
 
-//--------------------------------------------------------------
-//------------function
 void SetWindowMode()
 {
 	ChangeWindowMode(true);
 	SetGraphMode(WINDOW_SIZE_X, WINDOW_SIZE_Y, 32);
-}
-void SetUpData()
-{
-
 }
