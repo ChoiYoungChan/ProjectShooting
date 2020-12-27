@@ -5,12 +5,6 @@ namespace play_user
 	void Player::Initialize()
 	{
 		_Player_img = LoadGraph("Resource/Player.png");
-		_Bullet_img = LoadGraph("Resource/Moriya.png");
-
-		for (int index = 0; index < MAX_BULLET_COUNT; index++)
-		{
-			player_bullet[index].Initialize(_Bullet_img);
-		}
 	}
 
 	/// <summary>
@@ -20,8 +14,8 @@ namespace play_user
 	void Player::Update()
 	{
 		CalkTask();
-		DrawTask();
 	}
+
 	/// <summary>
 	/// ƒvƒŒƒCƒ„[‚ÌˆÚ“®§ŒÀ
 	/// </summary>
@@ -41,16 +35,7 @@ namespace play_user
 		}
 		if (keyboard::GetKey(KEY_INPUT_Z) >= 1)
 		{
-			player_bullet[shoot_count].SetPosition(pos_x, pos_y);
-			shoot_count++;
-			if (shoot_count >= MAX_BULLET_COUNT)
-			{
-				shoot_count = 0;
-			}
-		}
-		for (int count = 0; count < MAX_BULLET_COUNT; count++)
-		{
-			player_bullet[count].PlayerBulletUpdate();
+			_bulletmanager -> SetBullet(true, pos_x, (pos_y - 50));
 		}
 		if (pos_x < 0)
 		{
@@ -76,11 +61,6 @@ namespace play_user
 	void Player::DrawTask()
 	{
 		DrawRotaGraph(pos_x, pos_y, 1, 0, _Player_img, true);
-
-		for (int count = 0; count < MAX_BULLET_COUNT; count++)
-		{
-			player_bullet[count].DrawTask();
-		}
 	}
 
 	void Player::Finalize()

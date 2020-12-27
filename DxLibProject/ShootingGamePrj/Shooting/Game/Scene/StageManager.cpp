@@ -2,16 +2,13 @@
 
 //--------------------------------------------------------------
 //------------include Header
-#include "..\Stage\Stage_01.h"
-#include "..\Stage/Stage_02.h"
-#include "..\Stage/Stage_03.h"
+#include "..\Stage\Stage.h"
+
 
 
 namespace scene
 {
-	game::Stage01 stage01;
-	game::Stage02 stage02;
-	game::Stage03 stage03;
+	game::Stage stage;
 
 	/// <summary>
 	/// 最初のステージをInitializeする。
@@ -19,7 +16,7 @@ namespace scene
 	void StageManager::Initialize()			
 	{
 		_stagestate = StageState::Stage01;	//最初のステージを指定する。
-		stage01.Initialize();
+		stage.Initialize();
 	}
 
 	/// <summary>
@@ -27,24 +24,11 @@ namespace scene
 	/// </summary>
 	void StageManager::Update()
 	{
-		switch (_stagestate)				//現在のステージ状況によってInGameを切り替える
+		stage.Update();
+
+		if (this->Stage() == StageState::Result)
 		{
-		case StageState::Stage01 :
-			stage01.Update();
-			break;
-
-		case StageState::Stage02:
-			stage02.Update();
-			break;
-
-		case StageState::Stage03:
-			stage03.Update();
-			break;
-		case StageState::Result:
-			SetNextState(State::Result);
-			break;
-		default:
-			break;
+			this->Finalize();
 		}
 	}
 

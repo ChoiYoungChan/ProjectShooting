@@ -1,33 +1,27 @@
-#include "Monster.h"
+#include "BossMonster.h"
 
 namespace monster
 {
-	void Monster::Initialize()
+	void BossMonster::Initialize()
 	{
-		_Monster_img = LoadGraph("Resource/Monster_0001.png");
+		Middle_Boss_Monster_img = LoadGraph("Resource/Monster_0001.png");
+		Last_Boss_Monster_img = LoadGraph("Resource/Monster_0001.png");
 	}
-	/// <summary>
-	/// モンスターを呼び出せば実行続ける関数
-	/// </summary>
-	void Monster::Update()
+	void BossMonster::Update()
 	{
 		if (isActive == true)
 		{
 			CalkTask();
 		}
 	}
-	/// <summary>
-	/// モンスターを表示する関数
-	/// </summary>
-	void Monster::Draw()
+	void BossMonster::Draw()
 	{
 		if (isActive == true)
 		{
-			DrawRotaGraph(pos_x, pos_y, 1.0, 0, _Monster_img, true);
+			DrawRotaGraph(pos_x, pos_y, 1.0, 0, Middle_Boss_Monster_img, true);
 		}
 	}
-
-	void Monster::GetPosition(int get_pos_x, int get_pos_y, int destnation_pos_x, int destnation_pos_y)
+	void BossMonster::GetPosition(int get_pos_x, int get_pos_y, int destnation_pos_x, int destnation_pos_y)
 	{
 		if (isActive == true)
 		{
@@ -49,16 +43,12 @@ namespace monster
 			}
 		}
 	}
-	/// <summary>
-	/// モンスターで計算が必要な処理(弾を打つこと)をまとめた関数
-	/// </summary>
-	void Monster::CalkTask()
+	void BossMonster::CalkTask()
 	{
 		pos_x += monster_speed_x;
 		pos_y += monster_speed_y;
 	}
-
-	void Monster::Finalize()
+	void BossMonster::Finalize()
 	{
 		isActive = false;
 	}
