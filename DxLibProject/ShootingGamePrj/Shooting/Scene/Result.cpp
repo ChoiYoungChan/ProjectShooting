@@ -12,6 +12,11 @@ namespace scene
 	}
 	void Result::Finalize()
 	{
-
+		printfDx("Result - Good Bye");
+	}
+	void Result::GetGameData(int stage_number, int score)
+	{
+		result_stage_number = stage_number;
+		result_score = score;
 	}
 }

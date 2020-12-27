@@ -10,15 +10,17 @@ namespace play_user
 		{
 			shootnumber = 1;
 			bullet_speed = 20;
-			bullet_pos_x = -100;
-			bullet_pos_y = -100;
+			bullet_pos_x = 300;
+			bullet_pos_y = 600;
 			_damage = 100;
 		}
 		~PlayerBullet() = default;
 
-		void Initialize(int, int);
+		void Initialize();
+		void GetPosition(int,int);
 		void Update();
 		void Finalize();
+		void DrawTask();
 	public:
 		int bullet_pos_x, bullet_pos_y;			//íeä€ÇÃà íuç¿ïW
 

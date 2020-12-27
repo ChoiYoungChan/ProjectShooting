@@ -165,12 +165,13 @@
     <ClCompile Include="Source\MonsterBullet.cpp" />
     <ClCompile Include="Source\Player.cpp" />
     <ClCompile Include="Source\PlayerBullet.cpp" />
+    <ClCompile Include="Source\Stage02BulletHell.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainManager.h" />
     <ClInclude Include="Scene\BaseSceneController.h" />
+    <ClInclude Include="Scene\Exit.h" />
     <ClInclude Include="Scene\Manager\InputKey.h" />
-    <ClInclude Include="Scene\Manager\Singleton.h" />
     <ClInclude Include="Scene\Option.h" />
     <ClInclude Include="Scene\Result.h" />
     <ClInclude Include="Scene\SceneStateh.h" />
@@ -183,6 +184,15 @@
     <ClInclude Include="Source\MonsterBullet.h" />
     <ClInclude Include="Source\Player.h" />
     <ClInclude Include="Source\PlayerBullet.h" />
+    <ClInclude Include="Source\Stage02BulletHell.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource\Bullet_0001.png" />
+    <Image Include="Resource\Bullet_0003.png" />
+    <Image Include="Resource\Bullet_0005.png" />
+    <Image Include="Resource\Monster_0001.png" />
+    <Image Include="Resource\Moriya.png" />
+    <Image Include="Resource\Player.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

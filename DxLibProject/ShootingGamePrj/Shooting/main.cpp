@@ -14,29 +14,33 @@ int WINDOW_SIZE_X = 720, WINDOW_SIZE_Y = 720;
 
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
+	int First_time;
+	int Last_time;
 	SetWindowMode();
 	SetBackgroundColor(0, 0, 0);
 	if (DxLib_Init() == -1) { return -1; }
 
-	MainManager::MainManager& manager = MainManager::MainManager::Instance();
+	SetDrawScreen(DX_SCREEN_BACK);
 
-	while (ScreenFlip() == 0 && ProcessMessage() == 0 && ClearDrawScreen() == 0)
+	MainManager::MainManager manager;
+	manager.Initialize();
+
+	while (ProcessMessage() == 0)
 	{
-		SetDrawScreen(DX_SCREEN_BACK);
+		First_time = GetNowCount();
+
+		ClearDrawScreen();
 		keyboard::KeyUpdate();
 
-		if (manager._loopcount == 0)
+		if (manager.MainLoop() == 0)
 		{
-			manager.Initialize();
+			Last_time = (1000 / 60);
+			Last_time -= (GetNowCount() - First_time);
+			Sleep(Last_time);
+			break;
 		}
-		if (manager._loopcount >= 1)
-		{
-			if (manager.MainLoop() == 0)
-			{
-				break;
-			}
-		}
-		manager._loopcount++;
+		ScreenFlip();
+		
 	}
 	manager.Finalize();
 

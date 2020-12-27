@@ -19,8 +19,8 @@ namespace scene
 
 	private:
 		int G_SelectNumber;											// 選択されたメニュー
-		int MENU;													// メニューの数
-		int MENU_SELECT_POS_X = 80, MENU_UNSELECT_POS_X = 100;		// 選択されたメニューを区分するためのｘ軸座標
+		const int MENU = 3;													// メニューの数
+		const int MENU_SELECT_POS_X = 80, MENU_UNSELECT_POS_X = 100;		// 選択されたメニューを区分するためのｘ軸座標
 	private:
 		typedef struct
 		{

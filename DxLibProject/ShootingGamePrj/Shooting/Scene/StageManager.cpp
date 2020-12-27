@@ -14,14 +14,12 @@ namespace scene
 	game::Stage03 stage03;
 
 	/// <summary>
-	/// 最初に全てのステージをInitializeする。
+	/// 最初のステージをInitializeする。
 	/// </summary>
 	void StageManager::Initialize()			
 	{
 		_stagestate = StageState::Stage01;	//最初のステージを指定する。
 		stage01.Initialize();
-		stage02.Initialize();
-		stage03.Initialize();
 	}
 
 	/// <summary>
@@ -44,6 +42,8 @@ namespace scene
 			break;
 		case StageState::Result:
 			SetNextState(State::Result);
+			break;
+		default:
 			break;
 		}
 	}
