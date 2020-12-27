@@ -11,7 +11,7 @@ namespace bullet
 
 		void Start(int pos_x, int pos_y, int speed, int Bullet_img, int timecount)
 		{
-			if (timecount = 1)
+			if (shootnumber == 1)
 			{
 				bullet_pos_x = pos_x;
 				bullet_pos_y = pos_y;
@@ -22,19 +22,23 @@ namespace bullet
 
 		void BulletMovement()
 		{
+			
 			if (bullet_pos_y > 0)
 			{
 				DrawRotaGraph(bullet_pos_x, bullet_pos_y, 1, 0, bullet_img, true);
 				bullet_pos_y -= bullet_speed;
+				shootnumber = 0;
 			}
 			else
 			{
 				bullet_pos_y = -5;
+				shootnumber = 1;
 			}
 		}
 
 	private:
 		int bullet_pos_x, bullet_pos_y, bullet_speed, bullet_img;
+		int shootnumber;
 	};
 }
 
