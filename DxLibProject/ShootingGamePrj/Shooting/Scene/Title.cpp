@@ -8,7 +8,9 @@ namespace scene
 		G_SelectNumber = 0;
 		MENU = 3;
 	}
-
+	/// <summary>
+	/// “ü—Í‚ğó‚¯‚Äƒƒjƒ…‚ÌˆÚ“®‚Æ‘I‘ğ‚·‚éŠÖ”
+	/// </summary>
 	void Title::Update()
 	{
 		if (keyboard::GetKey(KEY_INPUT_DOWN) == 1)

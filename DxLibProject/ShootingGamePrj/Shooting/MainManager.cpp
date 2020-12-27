@@ -1,20 +1,18 @@
 //--------------------------------------------------------------
 //------------include
-#include <cassert>
 #include "MainManager.h"
 #include "Scene/BaseSceneController.h"
 #include "Scene/Title.h"
-
-
 
 namespace MainManager
 {
 	bool MainManager::Initialize()
 	{
 		// Title sceneì¬
-		_scene = scene::MakeScene::create(scene::State::Title);
+		_scene = scene::MakeScene::create(scene::State::Title);			//Å‰‚ÌState‚Íƒƒjƒ…Title
 		return true;
 	}
+	
 	int MainManager::MainLoop()
 	{
 		_loopcount = 0;

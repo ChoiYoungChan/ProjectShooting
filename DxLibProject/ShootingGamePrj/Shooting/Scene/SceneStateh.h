@@ -10,8 +10,6 @@ namespace scene
 		InGame,
 		Result,
 		Options,
-		Exit,
-
-		SceneCount
+		Exit
 	};
 }

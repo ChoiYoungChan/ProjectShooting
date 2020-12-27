@@ -17,6 +17,11 @@ namespace monster
 	{
 
 	}
+	/// <summary>
+	/// モンスターの基本的な弾幕Sampleの実装
+	/// </summary>
+	/// <param name="player_pos_x">目的地PlayerのX軸座標</param>
+	/// <param name="player_pos_y">目的地PlayerのY軸座標</param>
 	void Bullet::CalkBullet(int player_pos_x, int player_pos_y)
 	{
 		float distance = sqrt(pow(player_pos_x - bullet_pos_x, 2) + pow(player_pos_y - bullet_pos_y, 2));
