@@ -4,6 +4,7 @@ namespace scene
 {
 	void Title::Initialize()
 	{
+		SetBackgroundColor(0, 200, 0);
 		G_SelectNumber = 0;
 		MENU = 3;
 	}
@@ -24,7 +25,7 @@ namespace scene
 			if (_menu_number == G_SelectNumber)
 			{
 				MenuElement[_menu_number].menu_pos_x = MENU_SELECT_POS_X;
-				if (keyboard::GetKey(KEY_INPUT_SPACE) == 1)
+				if (keyboard::GetKey(KEY_INPUT_SPACE) == 1)						//選択されたメニュでSpaceを押すと該当のSceneが呼び出される
 				{
 					switch (G_SelectNumber)
 					{
@@ -44,7 +45,7 @@ namespace scene
 				}
 			}
 			else
-				MenuElement[_menu_number].menu_pos_x = MENU_UNSELECT_POS_X;
+				MenuElement[_menu_number].menu_pos_x = MENU_UNSELECT_POS_X;		//選択されていないメニュの位置を指定する
 		}
 		for (int _draw_menu = 0; _draw_menu < MENU; _draw_menu++)
 		{
@@ -55,6 +56,6 @@ namespace scene
 
 	void Title::Finalize()
 	{
-
+		SetBackgroundColor(0, 0, 0);
 	}	
 }

@@ -18,28 +18,17 @@ namespace monster
 	}
 	void Monster::Draw()
 	{
-		monster_pos_x = 100; monster_pos_y = 150;
+		monster_pos_x = 300; monster_pos_y = 300;
 
-		for (int index = 0; index < MONSTER_COUNT; index++)
-		{
-			DrawRotaGraph(monster_pos_x, monster_pos_y, 1.0, 0, _Monster_img, true);
-			monster_pos_x += 150;
-		}
+		DrawRotaGraph(monster_pos_x, monster_pos_y, 1.0, 0, _Monster_img, true);
 	}
 	void Monster::CalkTask()
 	{
-		_bullet[].Initialize(monster_pos_x, monster_pos_y);
-	}
-	void MonsterBullet::Initialize(int monster_pos_x, int monster_pos_y)
-	{
-		_Bullet_img = LoadGraph("Bullet_0003.png");
-	}
-	void MonsterBullet::Update()
-	{
-		DrawRotaGraph();
-	}
-	void MonsterBullet::Finalize()
-	{
-
+		_bullet[_monster_shoot_count].Initialize(monster_pos_x, monster_pos_y);
+		_monster_shoot_count++;
+		if (_monster_shoot_count > 5)
+		{
+			_monster_shoot_count = 0;
+		}
 	}
 }

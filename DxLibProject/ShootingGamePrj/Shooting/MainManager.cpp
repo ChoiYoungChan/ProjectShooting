@@ -11,6 +11,7 @@ namespace MainManager
 {
 	bool MainManager::Initialize()
 	{
+		// Title sceneì¬
 		_scene = scene::MakeScene::create(scene::State::Title);
 		return true;
 	}
@@ -18,12 +19,12 @@ namespace MainManager
 	{
 		_loopcount = 0;
 		_scene->Update();
-		if (_scene->isSetNextState())
+		if (_scene->isSetNextState())									//Ÿ‚Ìscene‚ª€”õ‚³‚ê‚Ä‚¢‚½‚çscene‚ğØ‚è‘Ö‚¦
 		{
-			_scene->Finalize();
-			_scene = scene::MakeScene::create(_scene->Nextstate());
+			_scene->Finalize();											//Œ»İ‚Ìscene‚ğFinalize‚·‚é
+			_scene = scene::MakeScene::create(_scene->Nextstate());		//Ÿ‚Ìscene‚ğì¬
 		}
-		return (_scene->state() != scene::State::Exit);
+		return (_scene->state() != scene::State::Exit);					//Exit scene‚É‚È‚é‚Ü‚Å‚ÉÀs‚·‚é
 	}
 	void MainManager::Finalize()
 	{
