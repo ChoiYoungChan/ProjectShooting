@@ -5,6 +5,8 @@ namespace play_user
 	void Player::Initialize()
 	{
 		_Player_img = LoadGraph("Player.png");
+		speed = 15;
+		Player_HP = 3;
 	}
 
 	void Player::Update()
@@ -25,14 +27,14 @@ namespace play_user
 		{
 			shoot[shoot_count].Initialize(player_pos_x, player_pos_y, speed);
 			shoot_count++;
-			if (shoot_count >= 50)
+			if (shoot_count >= MAX_BULLET_COUNT)
 			{
 				shoot_count = 0;
 			}
 		}
 		DrawRotaGraph(player_pos_x, player_pos_y, 1, 0, _Player_img, true);
 
-		for (int count = 0; count < 50; count++)
+		for (int count = 0; count < MAX_BULLET_COUNT; count++)
 		{
 			shoot[count].Update();
 		}

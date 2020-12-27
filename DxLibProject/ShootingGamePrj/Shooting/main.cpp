@@ -17,7 +17,7 @@ int WINDOW_SIZE_X = 720, WINDOW_SIZE_Y = 720;
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
 	SetWindowMode();
-
+	SetBackgroundColor(0, 0, 0);
 	if (DxLib_Init() == -1) { return -1; }
 
 	SetUpData();

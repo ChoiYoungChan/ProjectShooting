@@ -29,7 +29,7 @@ namespace scene
 
 		}MenuElement_t;
 
-		MenuElement_t MenuElement[3] =
+		MenuElement_t MenuElement[3] =								//ƒƒjƒ…‚Ì“à—e
 		{
 			{ MENU_SELECT_POS_X, 200, "Start Game"},
 			{100, 300, "Options"},

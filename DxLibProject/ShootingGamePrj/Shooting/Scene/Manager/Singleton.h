@@ -10,14 +10,14 @@ namespace manager
 	public:
 		static Type& Instance()
 		{
+			//Type‚ªSingleton‚ğŒp³‚µ‚Ä‚¢‚é‚©‚ğŠm”F‚·‚é
 			static_assert(std::is_base_of<Singleton, Type>::value);
 
 			static Type SingleInstance;
 			return SingleInstance;
 		}
-		virtual ~Singleton() = default;
-	protected:
 		Singleton() = default;
+		virtual ~Singleton() = default;
 
 	private:
 		//d•¡–h~

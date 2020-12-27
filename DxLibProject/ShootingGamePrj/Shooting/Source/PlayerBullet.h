@@ -19,11 +19,12 @@ namespace play_user
 		void Initialize(int, int, int);
 		void Update();
 		void Finalize();
+	public:
+		int bullet_pos_x, bullet_pos_y;			//弾丸の位置座標
 
 	private:
-		int _Bullet_img;
-		int bullet_pos_x, bullet_pos_y;
-		int shootnumber, bullet_speed;
-		int _damage;
+		int _Bullet_img;						//弾丸のイメージ
+		int shootnumber, bullet_speed;			//弾丸の数と速度
+		int _damage;							//弾丸のダメージ
 	};
 }

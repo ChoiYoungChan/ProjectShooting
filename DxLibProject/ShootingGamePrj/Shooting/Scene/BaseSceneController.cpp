@@ -14,9 +14,10 @@ using namespace std;
 
 namespace scene
 {
+	//stateにアタッチするsceneクラスを生成して返す
 	unique_ptr<BaseScene> MakeScene::create(const State state)
 	{
-		unique_ptr<BaseScene> move_scene;
+		unique_ptr<BaseScene> move_scene;	// 生成scene
 
 		switch (state)
 		{
@@ -33,10 +34,10 @@ namespace scene
 			move_scene = make_unique<Option>();
 			break;
 		default:
-			assert(false);
+			assert(false);							//対応していないクラスはassertする
 			break;
 		}
-		move_scene->Initialize();
+		move_scene->Initialize();					//Sceneを初期化する
 		return move_scene;
 	}
 }

@@ -17,16 +17,18 @@ namespace MainManager
 			_loopcount = 0;
 		}
 		~MainManager() = default;
+
 		bool Initialize();
 		int MainLoop();
 		void Finalize();
+
 	public:
-		int _loopcount;
+		int _loopcount;					//loop‚µ‚½”‚ğCount‚µ‚ÄInitialize‚ğˆê‰ñ‚¾‚¯Às‚·‚é‚½‚ß‚Éİ’è
 
 	private:
 		friend class manager::Singleton<MainManager>;
 
 	private:
-		unique_ptr<scene::BaseScene> _scene;
+		std::unique_ptr<scene::BaseScene> _scene;		//Às’†‚Ìscene
 	};
 }
