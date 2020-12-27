@@ -11,13 +11,8 @@ namespace monster
 	/// </summary>
 	void Monster::Update()
 	{
+		ShootBullet();
 		CalkTask();
-		if(monster_pos_x > 0 && monster_pos_x < WINDOW_SIZE_X &&
-			monster_pos_y < 0 && monster_pos_y < WINDOW_SIZE_Y)
-		{
-			ShootBullet();
-		}
-		Draw();
 	}
 	/// <summary>
 	/// モンスターを表示する関数
@@ -26,29 +21,44 @@ namespace monster
 	{
 		DrawRotaGraph(monster_pos_x, monster_pos_y, 1.0, 0, _Monster_img, true);
 	}
-	void Monster::GetPosition(int get_pos_x, int get_pos_y)
+
+	void Monster::GetPosition(int get_pos_x, int get_pos_y, int destnation_pos_x, int destnation_pos_y, 
+							  int target_x, int target_y)
 	{
 		monster_pos_x = get_pos_x;
 		monster_pos_y = get_pos_y;
+
+		get_monster_pos_x = get_pos_x;
+		get_monster_pos_y = get_pos_y;
+
+		dest_pos_x = destnation_pos_x;
+		dest_pos_y = destnation_pos_y;
+
+		bullet_target_pos_x = target_x;
+		bullet_target_pos_y = target_y;
+
+		int distance = (int)sqrt(pow(dest_pos_x - get_monster_pos_x, 2) + pow(dest_pos_y - get_monster_pos_y, 2));
+
+		if (distance)
+		{
+			monster_speed_x = (dest_pos_x - get_monster_pos_x) / distance * monster_speed;
+			monster_speed_y = (dest_pos_y - get_monster_pos_y) / distance * monster_speed;
+		}
 	}
 	/// <summary>
 	/// モンスターで計算が必要な処理(弾を打つこと)をまとめた関数
 	/// </summary>
 	void Monster::CalkTask()
 	{
-		
+		monster_pos_x += monster_speed_x;
+		monster_pos_y += monster_speed_y;
 	}
 	void Monster::ShootBullet()
 	{
-		monster_bullet[_monster_shoot_count].Initialize(monster_pos_x, monster_pos_y);
-		_monster_shoot_count++;
-		if (_monster_shoot_count >= 5)
-		{
-			_monster_shoot_count = 0;
-		}
+
 	}
 	void Monster::Finalize()
 	{
-
+		isActive = false;
 	}
 }

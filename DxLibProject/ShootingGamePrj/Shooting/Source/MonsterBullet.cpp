@@ -4,15 +4,26 @@ extern int WINDOW_SIZE_Y;
 
 namespace monster
 {
-	void Bullet::Initialize(int monster_pos_x, int monster_pos_y)
+	void Bullet::Initialize()
 	{
 		_Bullet_img = LoadGraph("Resource/Bullet_0005.png");
+		
+	}
+	void Bullet::GetPos(int monster_pos_x, int monster_pos_y)
+	{
 		bullet_pos_x = monster_pos_x;
 		bullet_pos_y = monster_pos_y;
 	}
 	void Bullet::Update()
 	{
-		
+		bullet_pos_x += bullet_speed;
+		bullet_pos_y -= bullet_speed_y;
+
+		Draw();
+	}
+	void Bullet::Draw()
+	{
+		DrawRotaGraph(bullet_pos_x, bullet_pos_y + 50, 0.3, 0, _Bullet_img, true);
 	}
 	void Bullet::Finalize()
 	{
@@ -26,30 +37,24 @@ namespace monster
 	/// モンスターが画面内に移動したらプレイヤーに弾を打つことー＞予定
 	void Bullet::CalkBullet(int player_pos_x, int player_pos_y)
 	{
-		float distance = sqrt(pow(player_pos_x - bullet_pos_x, 2) + pow(player_pos_y - bullet_pos_y, 2));
-		if (bullet_pos_y < WINDOW_SIZE_Y && bullet_pos_y > 0)
+		get_pos_x = bullet_pos_x;
+		get_pos_y = bullet_pos_y;
+
+		float distance = (int)sqrt(pow(player_pos_x - get_pos_x, 2) + pow(player_pos_y - get_pos_y, 2));
+
+		if (distance)
 		{
-			if (distance != 0)
+			bullet_speed_x = (get_pos_x - player_pos_x) / distance * bullet_speed;
+			bullet_speed_y = (get_pos_y - player_pos_y) / distance * bullet_speed;
+			if (bullet_speed_x <= 0)
 			{
-				bullet_speed_x = (player_pos_x - bullet_pos_x) / distance * bullet_speed;
-				bullet_speed_y = (bullet_pos_y - player_pos_y) / distance * bullet_speed;
+				bullet_speed_x * -1;
 			}
-			else
-			{
-				bullet_speed_x = 0;
-				bullet_speed_y = bullet_speed;
-			}
-
-			DrawRotaGraph(bullet_pos_x, bullet_pos_y + 50, 0.3, 0, _Bullet_img, true);
-			bullet_pos_x += bullet_speed_x;
-			bullet_pos_y -= bullet_speed_y;
-
-			shootnumber = 0;
 		}
 		else
 		{
-			bullet_pos_y = -10;
-			shootnumber = 1;
+			bullet_speed_x = 0;
+			bullet_speed_y = bullet_speed;
 		}
 	}
 }

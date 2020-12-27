@@ -5,11 +5,10 @@ namespace play_user
 	void Player::Initialize()
 	{
 		_Player_img = LoadGraph("Resource/Player.png");
-		speed = 15;
-		Player_HP = 3;
+		int _Bullet_img = LoadGraph("Resource/Moriya.png");
 		for (int index = 0; index < MAX_BULLET_COUNT; index++)
 		{
-			shoot[index].Initialize();
+			player_bullet[index].Initialize(_Bullet_img);
 		}
 	}
 
@@ -42,7 +41,7 @@ namespace play_user
 		}
 		if (keyboard::GetKey(KEY_INPUT_Z) >= 1)
 		{
-			shoot[shoot_count].GetPosition(player_pos_x, player_pos_y);
+			player_bullet[shoot_count].GetPosition(player_pos_x, player_pos_y);
 			shoot_count++;
 			if (shoot_count >= MAX_BULLET_COUNT)
 			{
@@ -51,7 +50,7 @@ namespace play_user
 		}
 		for (int count = 0; count < MAX_BULLET_COUNT; count++)
 		{
-			shoot[count].Update();
+			player_bullet[count].Update();
 		}
 		if (player_pos_x < 0)
 		{
@@ -80,7 +79,7 @@ namespace play_user
 
 		for (int count = 0; count < MAX_BULLET_COUNT; count++)
 		{
-			shoot[count].DrawTask();
+			player_bullet[count].DrawTask();
 		}
 	}
 

@@ -1,29 +1,25 @@
 #pragma once
 
-#include <type_traits>
-
-namespace manager
+namespace singleton
 {
-	template<typename Type>
 	class Singleton
 	{
 	public:
-		static Type& Instance()
+		static Singleton& Instance()
 		{
-			//Type‚ªSingleton‚ğŒp³‚µ‚Ä‚¢‚é‚©‚ğŠm”F‚·‚é
-			static_assert(std::is_base_of<Singleton, Type>::value);
+			static Singleton instance;
 
-			static Type SingleInstance;
-			return SingleInstance;
+			return instance;
 		}
-		Singleton() = default;
 		virtual ~Singleton() = default;
 
+	protected:
+		Singleton() = default;
 	private:
-		//d•¡–h~
 		Singleton(const Singleton&) = delete;
-		Singleton& operator=(const Singleton&) = delete;
-		Singleton(Singleton&&) = delete;
-		Singleton& operator=(Singleton&&) = delete;
+		Singleton& operator = (const Singleton&) = delete;
+
+		Singleton(const Singleton&&) = delete;
+		Singleton&& operator = (const Singleton&&) = delete;
 	};
 }

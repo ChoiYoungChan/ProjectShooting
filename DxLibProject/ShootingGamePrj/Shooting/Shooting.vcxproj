@@ -153,6 +153,8 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainManager.cpp" />
     <ClCompile Include="Scene\BaseSceneController.cpp" />
+    <ClCompile Include="Scene\Manager\BaseObject.cpp" />
+    <ClCompile Include="Scene\Manager\GameData.cpp" />
     <ClCompile Include="Scene\Manager\InputKey.cpp" />
     <ClCompile Include="Scene\Option.cpp" />
     <ClCompile Include="Scene\Result.cpp" />
@@ -161,17 +163,23 @@
     <ClCompile Include="Scene\Stage\Stage_02.cpp" />
     <ClCompile Include="Scene\Stage\Stage_03.cpp" />
     <ClCompile Include="Scene\Title.cpp" />
+    <ClCompile Include="Source\Bullet.cpp" />
     <ClCompile Include="Source\Monster.cpp" />
     <ClCompile Include="Source\MonsterBullet.cpp" />
     <ClCompile Include="Source\Player.cpp" />
     <ClCompile Include="Source\PlayerBullet.cpp" />
     <ClCompile Include="Source\Stage02BulletHell.cpp" />
+    <ClCompile Include="Source\Stage03BulletHell.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainManager.h" />
     <ClInclude Include="Scene\BaseSceneController.h" />
     <ClInclude Include="Scene\Exit.h" />
+    <ClInclude Include="Scene\Manager\BaseObject.h" />
+    <ClInclude Include="Scene\Manager\FindContact.h" />
+    <ClInclude Include="Scene\Manager\GameData.h" />
     <ClInclude Include="Scene\Manager\InputKey.h" />
+    <ClInclude Include="Scene\Manager\Singleton.h" />
     <ClInclude Include="Scene\Option.h" />
     <ClInclude Include="Scene\Result.h" />
     <ClInclude Include="Scene\SceneStateh.h" />
@@ -180,11 +188,13 @@
     <ClInclude Include="Scene\Stage\Stage_02.h" />
     <ClInclude Include="Scene\Stage\Stage_03.h" />
     <ClInclude Include="Scene\Title.h" />
+    <ClInclude Include="Source\Bullet.h" />
     <ClInclude Include="Source\Monster.h" />
     <ClInclude Include="Source\MonsterBullet.h" />
     <ClInclude Include="Source\Player.h" />
     <ClInclude Include="Source\PlayerBullet.h" />
     <ClInclude Include="Source\Stage02BulletHell.h" />
+    <ClInclude Include="Source\Stage03BulletHell.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resource\Bullet_0001.png" />

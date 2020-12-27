@@ -5,14 +5,21 @@ namespace scene
 	void Result::Initialize()
 	{
 		printfDx("Result - Initialize");
+		PlayMusic("000.mp3", DX_PLAYTYPE_LOOP);
 	}
 	void Result::Update()
+	{
+		DrawTask();
+		Sleep(10000);
+		Finalize();
+	}
+	void Result::DrawTask()
 	{
 		printfDx("Result - Update");
 	}
 	void Result::Finalize()
 	{
-		printfDx("Result - Good Bye");
+		SetNextState(State::Title);
 	}
 	void Result::GetGameData(int stage_number, int score)
 	{
