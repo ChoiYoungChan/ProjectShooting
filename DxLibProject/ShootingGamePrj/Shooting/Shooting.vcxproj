@@ -150,51 +150,46 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Game\Scene\BaseSceneController.cpp" />
+    <ClCompile Include="Game\Scene\Option.cpp" />
+    <ClCompile Include="Game\Scene\Result.cpp" />
+    <ClCompile Include="Game\Scene\StageManager.cpp" />
+    <ClCompile Include="Game\Scene\Title.cpp" />
+    <ClCompile Include="Game\Source\Bullet.cpp" />
+    <ClCompile Include="Game\Source\Monster.cpp" />
+    <ClCompile Include="Game\Source\Player.cpp" />
+    <ClCompile Include="Game\Source\Stage02BulletHell.cpp" />
+    <ClCompile Include="Game\Source\Stage03BulletHell.cpp" />
+    <ClCompile Include="Game\Stage\Stage_01.cpp" />
+    <ClCompile Include="Game\Stage\Stage_02.cpp" />
+    <ClCompile Include="Game\Stage\Stage_03.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainManager.cpp" />
-    <ClCompile Include="Scene\BaseSceneController.cpp" />
-    <ClCompile Include="Scene\Manager\BaseObject.cpp" />
-    <ClCompile Include="Scene\Manager\GameData.cpp" />
-    <ClCompile Include="Scene\Manager\InputKey.cpp" />
-    <ClCompile Include="Scene\Option.cpp" />
-    <ClCompile Include="Scene\Result.cpp" />
-    <ClCompile Include="Scene\StageManager.cpp" />
-    <ClCompile Include="Scene\Stage\Stage_01.cpp" />
-    <ClCompile Include="Scene\Stage\Stage_02.cpp" />
-    <ClCompile Include="Scene\Stage\Stage_03.cpp" />
-    <ClCompile Include="Scene\Title.cpp" />
-    <ClCompile Include="Source\Bullet.cpp" />
-    <ClCompile Include="Source\Monster.cpp" />
-    <ClCompile Include="Source\MonsterBullet.cpp" />
-    <ClCompile Include="Source\Player.cpp" />
-    <ClCompile Include="Source\PlayerBullet.cpp" />
-    <ClCompile Include="Source\Stage02BulletHell.cpp" />
-    <ClCompile Include="Source\Stage03BulletHell.cpp" />
+    <ClCompile Include="Manager\BaseObject.cpp" />
+    <ClCompile Include="Manager\GameData.cpp" />
+    <ClCompile Include="Manager\InputKey.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Game\Scene\BaseSceneController.h" />
+    <ClInclude Include="Game\Scene\Exit.h" />
+    <ClInclude Include="Game\Scene\Option.h" />
+    <ClInclude Include="Game\Scene\Result.h" />
+    <ClInclude Include="Game\Scene\SceneStateh.h" />
+    <ClInclude Include="Game\Scene\StageManager.h" />
+    <ClInclude Include="Game\Scene\Title.h" />
+    <ClInclude Include="Game\Source\Bullet.h" />
+    <ClInclude Include="Game\Source\Monster.h" />
+    <ClInclude Include="Game\Source\Player.h" />
+    <ClInclude Include="Game\Source\Stage02BulletHell.h" />
+    <ClInclude Include="Game\Source\Stage03BulletHell.h" />
+    <ClInclude Include="Game\Stage\Stage_01.h" />
+    <ClInclude Include="Game\Stage\Stage_02.h" />
+    <ClInclude Include="Game\Stage\Stage_03.h" />
     <ClInclude Include="MainManager.h" />
-    <ClInclude Include="Scene\BaseSceneController.h" />
-    <ClInclude Include="Scene\Exit.h" />
-    <ClInclude Include="Scene\Manager\BaseObject.h" />
-    <ClInclude Include="Scene\Manager\FindContact.h" />
-    <ClInclude Include="Scene\Manager\GameData.h" />
-    <ClInclude Include="Scene\Manager\InputKey.h" />
-    <ClInclude Include="Scene\Manager\Singleton.h" />
-    <ClInclude Include="Scene\Option.h" />
-    <ClInclude Include="Scene\Result.h" />
-    <ClInclude Include="Scene\SceneStateh.h" />
-    <ClInclude Include="Scene\StageManager.h" />
-    <ClInclude Include="Scene\Stage\Stage_01.h" />
-    <ClInclude Include="Scene\Stage\Stage_02.h" />
-    <ClInclude Include="Scene\Stage\Stage_03.h" />
-    <ClInclude Include="Scene\Title.h" />
-    <ClInclude Include="Source\Bullet.h" />
-    <ClInclude Include="Source\Monster.h" />
-    <ClInclude Include="Source\MonsterBullet.h" />
-    <ClInclude Include="Source\Player.h" />
-    <ClInclude Include="Source\PlayerBullet.h" />
-    <ClInclude Include="Source\Stage02BulletHell.h" />
-    <ClInclude Include="Source\Stage03BulletHell.h" />
+    <ClInclude Include="Manager\BaseObject.h" />
+    <ClInclude Include="Manager\GameData.h" />
+    <ClInclude Include="Manager\InputKey.h" />
+    <ClInclude Include="Manager\Singleton.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resource\Bullet_0001.png" />

@@ -2,8 +2,8 @@
 //--------------------------------------------------------------
 //------------include
 #include <memory>
-#include "Scene/BaseSceneController.h"
-#include "Scene/Manager/InputKey.h"
+#include "Game/Scene/BaseSceneController.h"
+#include "Manager/InputKey.h"
 
 namespace MainManager
 {
