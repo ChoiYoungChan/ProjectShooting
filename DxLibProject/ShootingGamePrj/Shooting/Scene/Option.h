@@ -1,5 +1,6 @@
 #pragma once
 #include "BaseSceneController.h"
+#include "Manager/InputKey.h"
 
 namespace scene
 {
@@ -16,18 +17,5 @@ namespace scene
 		void Finalize() override;
 
 	private:
-		int key[256];
-		int InputKey()
-		{
-			char keyvalue[256];
-			GetHitKeyStateAll(keyvalue);
-			for (int index = 0; index < 256; index++)
-			{
-				if (keyvalue[index] != 0)
-					keyvalue[index] = 1;
-				else
-					keyvalue[index] = 0;
-			}
-		}
 	};
 }

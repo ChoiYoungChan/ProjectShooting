@@ -7,8 +7,9 @@ namespace monster
 	public:
 		Monster()
 		{
-			monster_radius = 2;
+			monster_radius = 1;
 			monster_bullet_radius = 1;
+			MONSTER_COUNT = 5;
 		}
 
 		~Monster() = default;
@@ -18,12 +19,14 @@ namespace monster
 		void CalkTask();
 		void Draw();
 		void Finalize();
-		
 
 	public:
 		int monster_radius, monster_bullet_radius;		//モンスターの半径と弾丸の半径を設定
-		int monster_pos_x, monster_pos_y, speed, shoot_count;
-		int _Monster_img;
+		int monster_pos_x, monster_pos_y, speed;		//モンスターの位置と移動速度
+		int _Monster_img;								//モンスターのイメージ
+		int MONSTER_COUNT;								//一回に表示するモンスターの数
+
+		MonsterBullet _bullet[5];
 	};
 	class MonsterBullet
 	{
@@ -37,7 +40,7 @@ namespace monster
 		}
 		~MonsterBullet() = default;
 
-		void Initialize();
+		void Initialize(int,int);
 		void Update();
 		void Finalize();
 
@@ -46,6 +49,5 @@ namespace monster
 		int bullet_pos_x, bullet_pos_y;			//モンスター弾丸の初期位置を設定
 		int shootnumber, bullet_speed;			//弾丸を打った時を区分する数字と弾丸の速度
 		int _damage;							//ダメージ
-
 	};
 }

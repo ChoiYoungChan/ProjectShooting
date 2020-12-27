@@ -17,7 +17,7 @@ namespace scene
 		void Finalize() override;
 
 	private:
-		enum class StageState
+		enum class StageState							//Œ»İ‚ÌStage‚ğŠÇ—‚·‚é‚½‚ß‚Ìenum class
 		{
 			None,
 

@@ -9,7 +9,6 @@ namespace play_user
 
 	void Player::Update()
 	{
-
 		if (keyboard::GetKey(KEY_INPUT_RIGHT) >= 1) {
 			player_pos_x += speed;
 		}
@@ -22,7 +21,6 @@ namespace play_user
 		if (keyboard::GetKey(KEY_INPUT_UP) >= 1) {
 			player_pos_y -= speed;
 		}
-
 		if (keyboard::GetKey(KEY_INPUT_Z) >= 1)
 		{
 			shoot[shoot_count].Initialize(player_pos_x, player_pos_y, speed);
