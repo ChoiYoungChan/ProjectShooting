@@ -1,8 +1,8 @@
 //--------------------------------------------------------------
 //------------include
 #include "MainManager.h"
-#include "Scene/BaseSceneController.h"
-#include "Scene/Title.h"
+#include "Game/Scene/BaseSceneController.h"
+#include "Game/Scene/Title.h"
 
 namespace MainManager
 {

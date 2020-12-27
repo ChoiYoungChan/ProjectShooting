@@ -2,7 +2,7 @@
 //------------include
 #include "DxLib.h"
 #include "MainManager.h"
-#include "Scene/Manager/InputKey.h"
+#include "Manager/InputKey.h"
 
 //--------------------------------------------------------------
 //------------function

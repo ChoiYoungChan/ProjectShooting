@@ -13,153 +13,141 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="ソース ファイル\Source">
-      <UniqueIdentifier>{3306c9da-82b7-4344-ade5-5ae2f4488dd1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Scene">
-      <UniqueIdentifier>{6dfef1fa-8efe-486c-91d6-ac729872531f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Scene\Stage">
-      <UniqueIdentifier>{b751fb12-0e77-4033-8f81-56e02a252865}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Scene\Manager">
-      <UniqueIdentifier>{46e63417-5af8-4e72-b871-493d369bc2cd}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\Resource">
       <UniqueIdentifier>{f40c53ae-8269-4a32-940f-451f465219ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game">
+      <UniqueIdentifier>{6dfef1fa-8efe-486c-91d6-ac729872531f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Stage">
+      <UniqueIdentifier>{b751fb12-0e77-4033-8f81-56e02a252865}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Manager">
+      <UniqueIdentifier>{46e63417-5af8-4e72-b871-493d369bc2cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Source">
+      <UniqueIdentifier>{14547740-f32e-48fe-b490-f31ead595915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Scene">
+      <UniqueIdentifier>{2fb6a8c3-161b-48d1-9f63-bfd070128ef3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Player.cpp">
-      <Filter>ソース ファイル\Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\Title.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\Result.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\BaseSceneController.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\Option.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\Stage\Stage_01.cpp">
-      <Filter>ソース ファイル\Scene\Stage</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\Stage\Stage_02.cpp">
-      <Filter>ソース ファイル\Scene\Stage</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\Stage\Stage_03.cpp">
-      <Filter>ソース ファイル\Scene\Stage</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\StageManager.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
     <ClCompile Include="MainManager.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Monster.cpp">
-      <Filter>ソース ファイル\Source</Filter>
+    <ClCompile Include="Game\Source\Bullet.cpp">
+      <Filter>ソース ファイル\Game\Source</Filter>
     </ClCompile>
-    <ClCompile Include="Scene\Manager\InputKey.cpp">
-      <Filter>ソース ファイル\Scene\Manager</Filter>
+    <ClCompile Include="Game\Source\Monster.cpp">
+      <Filter>ソース ファイル\Game\Source</Filter>
     </ClCompile>
-    <ClCompile Include="Source\PlayerBullet.cpp">
-      <Filter>ソース ファイル\Source</Filter>
+    <ClCompile Include="Game\Source\Player.cpp">
+      <Filter>ソース ファイル\Game\Source</Filter>
     </ClCompile>
-    <ClCompile Include="Source\MonsterBullet.cpp">
-      <Filter>ソース ファイル\Source</Filter>
+    <ClCompile Include="Game\Source\Stage02BulletHell.cpp">
+      <Filter>ソース ファイル\Game\Source</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Stage02BulletHell.cpp">
-      <Filter>ソース ファイル\Source</Filter>
+    <ClCompile Include="Game\Source\Stage03BulletHell.cpp">
+      <Filter>ソース ファイル\Game\Source</Filter>
     </ClCompile>
-    <ClCompile Include="Scene\Manager\GameData.cpp">
-      <Filter>ソース ファイル\Scene\Manager</Filter>
+    <ClCompile Include="Game\Stage\Stage_01.cpp">
+      <Filter>ソース ファイル\Game\Stage</Filter>
     </ClCompile>
-    <ClCompile Include="Scene\Manager\BaseObject.cpp">
-      <Filter>ソース ファイル\Scene\Manager</Filter>
+    <ClCompile Include="Game\Stage\Stage_02.cpp">
+      <Filter>ソース ファイル\Game\Stage</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Bullet.cpp">
-      <Filter>ソース ファイル\Source</Filter>
+    <ClCompile Include="Game\Stage\Stage_03.cpp">
+      <Filter>ソース ファイル\Game\Stage</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Stage03BulletHell.cpp">
-      <Filter>ソース ファイル\Source</Filter>
+    <ClCompile Include="Game\Scene\BaseSceneController.cpp">
+      <Filter>ソース ファイル\Game\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Scene\Option.cpp">
+      <Filter>ソース ファイル\Game\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Scene\Result.cpp">
+      <Filter>ソース ファイル\Game\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Scene\StageManager.cpp">
+      <Filter>ソース ファイル\Game\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Scene\Title.cpp">
+      <Filter>ソース ファイル\Game\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\BaseObject.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\GameData.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\InputKey.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Player.h">
-      <Filter>ソース ファイル\Source</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Title.h">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Result.h">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\BaseSceneController.h">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\SceneStateh.h">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Option.h">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Stage\Stage_01.h">
-      <Filter>ソース ファイル\Scene\Stage</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Stage\Stage_02.h">
-      <Filter>ソース ファイル\Scene\Stage</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Stage\Stage_03.h">
-      <Filter>ソース ファイル\Scene\Stage</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\StageManager.h">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClInclude>
     <ClInclude Include="MainManager.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Monster.h">
-      <Filter>ソース ファイル\Source</Filter>
+    <ClInclude Include="Game\Source\Bullet.h">
+      <Filter>ソース ファイル\Game\Source</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\Manager\InputKey.h">
-      <Filter>ソース ファイル\Scene\Manager</Filter>
+    <ClInclude Include="Game\Source\Monster.h">
+      <Filter>ソース ファイル\Game\Source</Filter>
     </ClInclude>
-    <ClInclude Include="Source\PlayerBullet.h">
-      <Filter>ソース ファイル\Source</Filter>
+    <ClInclude Include="Game\Source\Player.h">
+      <Filter>ソース ファイル\Game\Source</Filter>
     </ClInclude>
-    <ClInclude Include="Source\MonsterBullet.h">
-      <Filter>ソース ファイル\Source</Filter>
+    <ClInclude Include="Game\Source\Stage02BulletHell.h">
+      <Filter>ソース ファイル\Game\Source</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Stage02BulletHell.h">
-      <Filter>ソース ファイル\Source</Filter>
+    <ClInclude Include="Game\Source\Stage03BulletHell.h">
+      <Filter>ソース ファイル\Game\Source</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\Exit.h">
-      <Filter>ソース ファイル\Scene</Filter>
+    <ClInclude Include="Game\Stage\Stage_01.h">
+      <Filter>ソース ファイル\Game\Stage</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\Manager\FindContact.h">
-      <Filter>ソース ファイル\Scene\Manager</Filter>
+    <ClInclude Include="Game\Stage\Stage_02.h">
+      <Filter>ソース ファイル\Game\Stage</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\Manager\GameData.h">
-      <Filter>ソース ファイル\Scene\Manager</Filter>
+    <ClInclude Include="Game\Stage\Stage_03.h">
+      <Filter>ソース ファイル\Game\Stage</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\Manager\Singleton.h">
-      <Filter>ソース ファイル\Scene\Manager</Filter>
+    <ClInclude Include="Game\Scene\BaseSceneController.h">
+      <Filter>ソース ファイル\Game\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\Manager\BaseObject.h">
-      <Filter>ソース ファイル\Scene\Manager</Filter>
+    <ClInclude Include="Game\Scene\Exit.h">
+      <Filter>ソース ファイル\Game\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Bullet.h">
-      <Filter>ソース ファイル\Source</Filter>
+    <ClInclude Include="Game\Scene\Option.h">
+      <Filter>ソース ファイル\Game\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Stage03BulletHell.h">
-      <Filter>ソース ファイル\Source</Filter>
+    <ClInclude Include="Game\Scene\Result.h">
+      <Filter>ソース ファイル\Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Scene\SceneStateh.h">
+      <Filter>ソース ファイル\Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Scene\StageManager.h">
+      <Filter>ソース ファイル\Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Scene\Title.h">
+      <Filter>ソース ファイル\Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\BaseObject.h">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\GameData.h">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\InputKey.h">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\Singleton.h">
+      <Filter>ソース ファイル\Manager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
