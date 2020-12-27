@@ -1,14 +1,17 @@
 #pragma once
 
+#include <type_traits>
+
 namespace singleton
 {
-	class Singleton
+	template<typename Type> class Singleton
 	{
 	public:
-		static Singleton& Instance()
+		static Type& Instance()
 		{
-			static Singleton instance;
+			static_assert(std::is_base_of<Singleton, Type>::value);
 
+			static Type instance;
 			return instance;
 		}
 		virtual ~Singleton() = default;

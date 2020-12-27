@@ -1,7 +1,6 @@
 #include "DxLib.h"
-#include <memory>
+
 #include "..\..\Manager\InputKey.h"
-#include "Bullet.h"
 #include "..\..\Manager\BaseObject.h"
 #include "..\..\Manager\BulletManager.h"
 
@@ -9,16 +8,15 @@ namespace play_user
 {
 	class Player : public base::BaseObject
 	{
-		
 	public:
-		Player(bulletmanager::BulletManager* bulletManager) : BaseObject(base::TYPE::Player)
+		Player() : BaseObject(base::TYPE::Player)
 		{
-			_bulletmanager = bulletManager;
+			bullet_shooter = 0;
 
 			isActive = true;
 			isPlayer = true;
 
-			pos_x = 300;
+			pos_x = 350;
 			pos_y = 600;
 
 			PLAYER_MAX_POS_X = WINDOW_SIZE_X - 10;
@@ -28,16 +26,12 @@ namespace play_user
 		~Player() = default;
 
 	public:
-		bulletmanager::BulletManager * _bulletmanager = NULL;
-
 		void Initialize();
-		void Update();
+		void CalkTask();
 		void DrawTask();
 		void Finalize();
-
-	private:
-		void CalkTask();
-		
+	public:
+		int player_invi_count = 0;
 
 	private:
 		int _Player_img;													//プレイヤーのイメージ

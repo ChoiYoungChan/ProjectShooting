@@ -22,6 +22,8 @@ namespace scene
 		int G_SelectNumber;											// 選択されたメニュー
 		const int MENU = 3;													// メニューの数
 		const int MENU_SELECT_POS_X = 80, MENU_UNSELECT_POS_X = 100;		// 選択されたメニューを区分するためのｘ軸座標
+		int MovieGraphHandle;
+
 	private:
 		typedef struct
 		{

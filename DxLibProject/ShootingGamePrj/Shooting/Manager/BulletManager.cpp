@@ -1,4 +1,5 @@
 #include "BulletManager.h"
+#include "..\Game\Source\Player.h"
 
 namespace bulletmanager
 {
@@ -12,20 +13,14 @@ namespace bulletmanager
 		monster_bullet_img = LoadGraph("Resource/Bullet_0001.png");
 	}
 
-	void BulletManager::Update()
-	{
-		CalkTask();
-		DrawTask();
-	}
-
 	void BulletManager::CalkTask()
 	{
 		for (int count = 0; count < BULLET_MAX; count++)
 		{
 			if (!_bullet[count].isActive)
 				continue;
-
 			_bullet[count].CalkTask();
+
 		}
 	}
 
@@ -62,45 +57,33 @@ namespace bulletmanager
 	/// <param name="isplayer">Playerなのかを鑑定</param>
 	/// <param name="bullet_pos_x">最初の弾丸のX軸座標</param>
 	/// <param name="bullet_pos_y">最初の弾丸のY軸座標</param>
-	void BulletManager::SetBullet(bool status, int bullet_pos_x, int bullet_pos_y)
+	void BulletManager::SetBullet(bool status,int shooter, int bullet_pos_x, int bullet_pos_y)
 	{
 		//Freeな弾丸を持って来て
 		bullet::Bullet* bullet_ = FindFreeBullet();
 		if (bullet_ == NULL)
 		{
-			for (int count = 0; count < BULLET_MAX; count++)
-			{
-				if (_bullet[count].isActive)
-				{
-					_bullet[count].isActive = false;
-				}
-			}
-			bullet_ = _bullet;
+			return;
 		}
 
 		//弾丸を打つTypeによってPlayerが打つのかMonsterが打つのかを識別
 		bullet_->_type = (status) ? (base::TYPE::PlayerBullet) : (base::TYPE::EnemyBullet);
 
-		//弾丸を打つTypeによってPlayerイメージとMonsterイメージを区分しれ入れる
-		bullet_->SetBullet(status, bullet_pos_x, bullet_pos_y,
-			(status) ? (player_bullet_img) : (monster_bullet_img),
-			(status) ? (player_bullet_size) : (monster_bullet_size));
-
-		bullet_->_bullethell.SetTargetPosition(_monster_id, target_pos_x, target_pos_y, bullet_pos_x, bullet_pos_y);
+		////弾丸を打つTypeによってPlayerイメージとMonsterイメージを区分しれ入れる
+		bullet_->SetBullet(status, shooter, bullet_pos_x, bullet_pos_y,
+						  (status) ? (player_bullet_img) : (monster_bullet_img),
+						  (status) ? (player_bullet_size) : (monster_bullet_size),
+						  _player_pos_x, _player_pos_y);
 
 		bullet_->isActive = true;
 	}
 
-	void BulletManager::GetMonsterID(int monsterID)
+	void BulletManager::GetTargetPos(int player_x, int player_y)
 	{
-		_monster_id = monsterID;
+		_player_pos_x = player_x;
+		_player_pos_y = player_y;
 	}
 
-	void BulletManager::SetTarget(int player_pos_x, int player_pos_y)
-	{
-		target_pos_x = player_pos_x;
-		target_pos_y = player_pos_y;
-	}
 	bullet::Bullet * BulletManager::Getbullet(int index)
 	{
 		return _bullet + index;

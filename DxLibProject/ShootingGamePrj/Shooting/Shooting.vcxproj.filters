@@ -87,6 +87,9 @@
     <ClCompile Include="Game\Source\BossMonster.cpp">
       <Filter>ソース ファイル\Game\Source</Filter>
     </ClCompile>
+    <ClCompile Include="Manager\PlayerManager.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainManager.h">
@@ -149,6 +152,9 @@
     <ClInclude Include="Game\Source\BossMonster.h">
       <Filter>ソース ファイル\Game\Source</Filter>
     </ClInclude>
+    <ClInclude Include="Manager\PlayerManager.h">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resource\Bullet_0001.png">
@@ -167,6 +173,12 @@
       <Filter>ソース ファイル\Resource</Filter>
     </Image>
     <Image Include="Resource\Player.png">
+      <Filter>ソース ファイル\Resource</Filter>
+    </Image>
+    <Image Include="Resource\LastBoss.jpg">
+      <Filter>ソース ファイル\Resource</Filter>
+    </Image>
+    <Image Include="Resource\MiddleBoss.PNG">
       <Filter>ソース ファイル\Resource</Filter>
     </Image>
   </ItemGroup>

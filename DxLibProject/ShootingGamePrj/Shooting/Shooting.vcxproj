@@ -168,6 +168,7 @@
     <ClCompile Include="Manager\GameData.cpp" />
     <ClCompile Include="Manager\InputKey.cpp" />
     <ClCompile Include="Manager\MonsterManager.cpp" />
+    <ClCompile Include="Manager\PlayerManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game\Scene\BaseSceneController.h" />
@@ -189,12 +190,15 @@
     <ClInclude Include="Manager\GameData.h" />
     <ClInclude Include="Manager\InputKey.h" />
     <ClInclude Include="Manager\MonsterManager.h" />
+    <ClInclude Include="Manager\PlayerManager.h" />
     <ClInclude Include="Manager\Singleton.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resource\Bullet_0001.png" />
     <Image Include="Resource\Bullet_0003.png" />
     <Image Include="Resource\Bullet_0005.png" />
+    <Image Include="Resource\LastBoss.jpg" />
+    <Image Include="Resource\MiddleBoss.PNG" />
     <Image Include="Resource\Monster_0001.png" />
     <Image Include="Resource\Moriya.png" />
     <Image Include="Resource\Player.png" />

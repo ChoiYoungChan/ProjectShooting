@@ -1,21 +1,12 @@
 #include "Player.h"
 
+
 namespace play_user
 {
 	void Player::Initialize()
 	{
 		_Player_img = LoadGraph("Resource/Player.png");
 	}
-
-	/// <summary>
-	/// プレイヤーのコントロールと表示すること
-	/// ZKeyを押した際に弾を打つこと
-	/// </summary>
-	void Player::Update()
-	{
-		CalkTask();
-	}
-
 	/// <summary>
 	/// プレイヤーの移動制限
 	/// </summary>
@@ -35,7 +26,7 @@ namespace play_user
 		}
 		if (keyboard::GetKey(KEY_INPUT_Z) >= 1)
 		{
-			_bulletmanager -> SetBullet(true, pos_x, (pos_y - 50));
+			bulletmanager::BulletManager::Instance().SetBullet(true, bullet_shooter, pos_x, (pos_y - 50));
 		}
 		if (pos_x < 0)
 		{
@@ -45,14 +36,15 @@ namespace play_user
 		{
 			pos_x = PLAYER_MAX_POS_X;
 		}
-		if (pos_y <= 200)
+		if (pos_y <= 100)
 		{
-			pos_y = 200;
+			pos_y = 100;
 		}
 		if (pos_y >= WINDOW_SIZE_Y)
 		{
 			pos_y = PLAYER_MAX_POS_Y;
 		}
+		
 	}
 
 	/// <summary>
@@ -60,7 +52,10 @@ namespace play_user
 	/// </summary>
 	void Player::DrawTask()
 	{
-		DrawRotaGraph(pos_x, pos_y, 1, 0, _Player_img, true);
+		if (player_invi_count % 2 == 0)
+		{
+			DrawRotaGraph(pos_x, pos_y, 1, 0, _Player_img, true);
+		}
 	}
 
 	void Player::Finalize()

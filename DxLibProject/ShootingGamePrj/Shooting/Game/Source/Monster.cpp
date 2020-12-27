@@ -1,4 +1,5 @@
 #include "Monster.h"
+#include "..\..\Manager\BulletManager.h"
 
 namespace monster
 {
@@ -6,16 +7,7 @@ namespace monster
 	{
 		_Monster_img = LoadGraph("Resource/Monster_0001.png");
 	}
-	/// <summary>
-	/// モンスターを呼び出せば実行続ける関数
-	/// </summary>
-	void Monster::Update()
-	{
-		if (isActive == true)
-		{
-			CalkTask();
-		}
-	}
+
 	/// <summary>
 	/// モンスターを表示する関数
 	/// </summary>
@@ -54,8 +46,15 @@ namespace monster
 	/// </summary>
 	void Monster::CalkTask()
 	{
-		pos_x += monster_speed_x;
-		pos_y += monster_speed_y;
+		if (isActive == true)
+		{
+			pos_x += monster_speed_x;
+			pos_y += monster_speed_y;
+			if (pos_x > 0 && pos_x < WINDOW_SIZE_X && pos_y > 0 && pos_y < WINDOW_SIZE_Y)
+			{
+				bulletmanager::BulletManager::Instance().SetBullet(false, Monster_ID, pos_x, pos_y);
+			}
+		}
 	}
 
 	void Monster::Finalize()

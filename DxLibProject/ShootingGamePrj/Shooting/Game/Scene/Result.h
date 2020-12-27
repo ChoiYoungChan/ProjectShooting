@@ -18,15 +18,15 @@ namespace scene
 		void Initialize() override;
 		void Update() override;
 		void Finalize() override;
-		void GetGameData(int,int);
+		void GetGameData(bool,int,int);
 		void DrawTask();
 
-	public:
+	private:
+		int StrWidth, StrLen;
+		bool winorlose;
+		char result_status;
 		int result_stage_number;
 		int result_score;
-
-	private:
-
 	};
 
 }
