@@ -1,16 +1,15 @@
 //--------------------------------------------------------------
-//------------include
+//------------include Header
 #include "DxLib.h"
 #include "MainManager.h"
 #include "Manager/InputKey.h"
+//--------------------------------------------------------------
+//------------System Header
+#include "System.h"
 
 //--------------------------------------------------------------
 //------------function
 void SetWindowMode();
-
-//--------------------------------------------------------------
-//------------Global Variable
-int WINDOW_SIZE_X = 720, WINDOW_SIZE_Y = 720;
 
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
@@ -38,7 +37,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 			Last_time -= (GetNowCount() - First_time);
 			Sleep(Last_time);
 			break;
-		}
+		} 
 		ScreenFlip();
 		
 	}

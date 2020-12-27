@@ -4,7 +4,7 @@ namespace scene
 {
 	void Title::Initialize()
 	{
-		SetBackgroundColor(0, 200, 0);
+		SetBackgroundColor(0, 210, 0);
 		G_SelectNumber = 0;
 		MovieGraphHandle = LoadGraph("Resource/TitleBackGround.mp4");
 	}
@@ -14,8 +14,6 @@ namespace scene
 	void Title::Update()
 	{
 		PlayMovieToGraph(MovieGraphHandle);
-
-		DrawRotaGraph(400, 500, 1,0, LoadGraph("Resource/Torii.png"),true);
 		DrawRotaGraph(400, 500, 1, 0, MovieGraphHandle, false);
 
 		if (keyboard::GetKey(KEY_INPUT_DOWN) == 1)

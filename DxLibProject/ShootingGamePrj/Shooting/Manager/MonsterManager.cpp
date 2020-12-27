@@ -1,72 +1,112 @@
+//--------------------------------------------------------------
+//------------include Header
 #include "MonsterManager.h"
 
 namespace monstermanager
 {
 	void MonsterManager::Initialize()
 	{
-		for (int index = 0; index < ENEMY_MAX; index++)
+		for (int index = ZERO; index < ENEMY_MAX; index++)
 		{
-			_p_enemy[index] = new monster::Monster();
-			_p_enemy[index]->Initialize();
+			_enemy[index].Initialize();
 		}
-		_p_boss = new monster::BossMonster();
-		_p_boss->Initialize();
-
-		MiddleBoss_img = LoadGraph("Resource/MiddleBoss.jpg");
-		LastBoss_img = LoadGraph("Resource/LastBoss.jpg");
+		_img[ImageState::Normal_monster] = LoadGraph("Resource/Monster_0001.png");
+		_img[ImageState::Middle_Boss_monster] = LoadGraph("Resource/MiddleBoss.jpg");
+		_img[ImageState::Last_Boss_monster] = LoadGraph("Resource/LastBoss.jpg");
 	}
+
+	/// <summary>
+	/// モンスターを描画
+	/// </summary>
 	void MonsterManager::DrawTask()
 	{
-		for (int index = 0; index < ENEMY_MAX; index++)
+		for (int index = ZERO; index < ENEMY_MAX; index++)
 		{
-			_p_enemy[index]->Draw();
+			if (!_enemy[index]._isActive)
+				continue;
+			_enemy[index].Draw();
 		}
-		_p_boss->Draw();
 	}
+
+	/// <summary>
+	/// モンスターで計算する関数を呼び出す
+	/// </summary>
 	void MonsterManager::CalkTask()
 	{
-		for (int index = 0; index < ENEMY_MAX; index++)
+		for (int index = ZERO; index < ENEMY_MAX; index++)
 		{
-			_p_enemy[index]->CalkTask();
-		}
-		_p_boss->CalkTask();
-	}
-
-	void MonsterManager::MonsterGetPos(int get_pos_x, int get_pos_y, int destination_pos_x, int destination_pos_y)
-	{
-		for (int index = 0; index < ENEMY_MAX; index++)
-		{
-			_p_enemy[index]->isActive = true;
-			_p_enemy[index]->GetPosition(get_pos_x + (index * 50), get_pos_y + (index * 50),
-					   				 destination_pos_x, destination_pos_y);
+			if (!_enemy[index]._isActive)
+				continue;
+			_enemy[index].CalkTask();
 		}
 	}
 
-	void MonsterManager::BossGetPos(int get_pos_x, int get_pos_y, int destination_pos_x, int destination_pos_y)
+	monster::Monster * MonsterManager::FindFreeMonster()
 	{
-		_p_boss->isActive = true;
-		_p_boss->SetBossMonster((_p_boss->Monster_ID == 1) ? (MiddleBoss_img) : (LastBoss_img) ,
-								get_pos_x, get_pos_y,
-								destination_pos_x, destination_pos_y);
+		for (int count = 0; count < ENEMY_MAX; count++)
+		{
+			if (!_enemy[count]._isActive)
+			{
+				return &_enemy[count];
+			}
+		}
+		return NULL;
+	}
+
+	/// <summary>
+	/// モンスターの数、位置と移動する目的地、イメージを設定する
+	/// </summary>
+	/// <param name="Enemy_count">表示するモンスターの数</param>
+	/// <param name="get_pos_x">モンスターのX軸</param>
+	/// <param name="get_pos_y">モンスターのY軸</param>
+	/// <param name="destination_pos_x">目的地のX軸</param>
+	/// <param name="destination_pos_y">目的地のY軸</param>
+	void MonsterManager::MonsterGetPos(int type, int Enemy_count, 
+									   int get_pos_x,int get_pos_y, 
+									   int destination_pos_x,int destination_pos_y)
+	{
+		for (int index = ZERO; index < Enemy_count; index++)
+		{
+			monster::Monster* _monster = FindFreeMonster();
+
+			if (_monster == NULL)
+			{
+				return;
+			}
+
+			int _monster_img;
+
+			switch (type)
+			{
+			case NORMAL_MONSTER_ID:
+				_monster_img = _img[ImageState::Normal_monster];
+				break;
+			case BOSS_MONSTER_ID:
+				_monster_img = _img[ImageState::Middle_Boss_monster];
+				break;
+			case LAST_BOSS_MONSTER_ID:
+				_monster_img = _img[ImageState::Last_Boss_monster];
+				break;
+			}
+			_monster->_isActive = true;
+			_monster->GetPosition(type, _monster_img,
+				get_pos_x + (index * 61), get_pos_y + (index * 81),
+				destination_pos_x, destination_pos_y);
+		}
+	}
+
+	/// <summary>
+	/// モンスターの情報などを受け取るために戻位置としてモンスターを指定
+	/// </summary>
+	/// <param name="index"></param>
+	/// <returns></returns>
+	monster::Monster * MonsterManager::GetEnemy(int index)
+	{
+		return _enemy + index;
 	}
 
 	void MonsterManager::Finalize()
 	{
-		for (int index = 0; index < ENEMY_MAX; index++)
-		{
-			_p_enemy[index]->isActive = false;
-		}
-		_p_boss->Monster_ID++;
-		_p_boss->isActive = false;
-	}
 
-	monster::Monster * MonsterManager::GetEnemy(int index)
-	{
-		return _p_enemy[index];
-	}
-
-	monster::BossMonster* MonsterManager::GetBoss()
-	{
-		return _p_boss;
 	}
 }

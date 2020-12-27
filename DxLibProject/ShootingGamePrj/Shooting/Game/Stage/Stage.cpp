@@ -1,3 +1,5 @@
+//--------------------------------------------------------------
+//------------include Header
 #include "Stage.h"
 
 namespace game
@@ -9,54 +11,82 @@ namespace game
 
 	void Stage::Update()
 	{
-		SpawnMonster();
-		CalkTask();								//衝突判定を計算する関数
+		Pause();
+		if (!_isPause)
+		{
+			_time_count = GetNowCount();			//Stage01の時間を取って弾幕生成する際に使う変数
+			SpawnMonster();
+			CalkTask();								//衝突判定を計算する関数
+		}
 		Draw();									//モンスターとプレイヤーを表示する関数
-		_time_count = GetNowCount();			//Stage01の時間を取って弾幕生成する際に使う変数
 	}
 	/// <summary>
 	/// Playerとモンスターを表示するための関数
 	/// </summary>
 	void Stage::Draw()
 	{
-		DrawFormatString(20, 10, GetColor(255, 255, 255), "Stage0%d ", StageID + 1);
-		DrawFormatString(20, WINDOW_SIZE_Y - 20, GetColor(0, 255, 0), "Score : %d", gamedata.Score);
-		DrawFormatString(300, WINDOW_SIZE_Y - 20, GetColor(0, 255, 0), "Life : %d", gamedata.Player_HP);
+		DrawFormatString(20, 10, GetColor(255, 255, 255), "Stage0%d ", (_stagestate + 1));
+		DrawFormatString(20, WINDOW_SIZE_Y - 20, GetColor(0, 255, 0), "Score : %d", data::GameData::Instance().Score);
+		DrawFormatString(300, WINDOW_SIZE_Y - 20, GetColor(0, 255, 0), "Life : %d", data::GameData::Instance().Player_HP);
 		DrawFormatString(600, WINDOW_SIZE_Y - 20, GetColor(0, 255, 0), "Time : %d", (_time_count - _begin_time));
 
-		playermanager::PlayerManager::Instance().DrawTask();
-		monstermanager::MonsterManager::Instance().DrawTask();
-		bulletmanager::BulletManager::Instance().DrawTask();
+		PLAYER_MANAGER().DrawTask();
+		MONSTER_MANAGER().DrawTask();
+		BULLET_MANAGER().DrawTask();
 	}
 
 	void Stage::SpawnMonster()
 	{
-		int nowSecond = (_time_count - _begin_time) / 1000;
+		_nowSecond = (_time_count - _begin_time) / 1000;
+
+		switch (_stagestate)
+		{
+		case StageManager::Stage02:
+			boss_type = BOSS_MONSTER_ID;
+			break;
+		case StageManager::Stage03:
+			boss_type = LAST_BOSS_MONSTER_ID;
+			break;
+		}
 
 		for (int count = 0; count < MOVE_COUNTER; count++)
 		{
-			if ((monster_table[StageID][count].isActive) &&
-				(monster_table[StageID][count].type_boss == false) &&
-				nowSecond == (monster_table[StageID][count].monster_spawn_time))
+			//モンスターを表示する
+			if ((_monster_table[_stagestate][count].isActive) &&
+				(_monster_table[_stagestate][count].type_boss == false) &&
+				_nowSecond == (_monster_table[_stagestate][count].monster_spawn_time))
 			{
-				monster_table[StageID][count].isActive = false;
+				_monster_table[_stagestate][count].isActive = false;
 
-				monstermanager::MonsterManager::Instance().MonsterGetPos(monster_table[StageID][count].monster_pos_x,
-								 monster_table[StageID][count].monster_pos_y,
-								 monster_table[StageID][count].destination_pos_x, 
-								 monster_table[StageID][count].destination_pos_y);
+				MONSTER_MANAGER().MonsterGetPos(
+								 NORMAL_MONSTER_ID,
+								 _monster_table[_stagestate][count].monster_count,
+								 _monster_table[_stagestate][count].monster_pos_x,
+								 _monster_table[_stagestate][count].monster_pos_y,
+								 _monster_table[_stagestate][count].destination_pos_x,
+								 _monster_table[_stagestate][count].destination_pos_y);
 			}
-
-			if ((monster_table[StageID][count].isActive) &&
-				(monster_table[StageID][count].type_boss) &&
-				nowSecond == (monster_table[StageID][count].monster_spawn_time))
+			for (int index = 0; index < ENEMY_MAX; index++)
 			{
-				monster_table[StageID][count].isActive = false;
-				monstermanager::MonsterManager::Instance().GetBoss()->isActive = true;
-				monstermanager::MonsterManager::Instance().BossGetPos(monster_table[StageID][count].monster_pos_x,
-					monster_table[StageID][count].monster_pos_y,
-					monster_table[StageID][count].destination_pos_x,
-					monster_table[StageID][count].destination_pos_y);
+				if (_nowSecond == (_monster_table[_stagestate][count].shoot_bullet_time) &&
+					MONSTER_MANAGER().GetEnemy(index)->_isActive == true)
+				{
+					MONSTER_MANAGER().GetEnemy(index)->ShootBullet();
+				}
+			}
+			
+			//Bossモンスターを表示する
+			if ((_monster_table[_stagestate][count].isActive) &&
+				(_monster_table[_stagestate][count].type_boss) &&
+				_nowSecond == (_monster_table[_stagestate][count].monster_spawn_time))
+			{
+				_monster_table[_stagestate][count].isActive = false;
+				MONSTER_MANAGER().MonsterGetPos(boss_type,
+					_monster_table[_stagestate][count].monster_count,
+					_monster_table[_stagestate][count].monster_pos_x,
+					_monster_table[_stagestate][count].monster_pos_y,
+					_monster_table[_stagestate][count].destination_pos_x,
+					_monster_table[_stagestate][count].destination_pos_y);
 			}
 		}
 	}
@@ -66,162 +96,172 @@ namespace game
 	/// </summary>
 	void Stage::CalkTask()
 	{
-		playermanager::PlayerManager::Instance().CalkTask();
-		monstermanager::MonsterManager::Instance().CalkTask();
-		bulletmanager::BulletManager::Instance().CalkTask();
+		PLAYER_MANAGER().CalkTask();
+		MONSTER_MANAGER().CalkTask();
+		BULLET_MANAGER().CalkTask();
 
-		ResetFunc();
+		CheckFinalize();
 		ImpactCheck();
 		CheckGameOver();
 	}
 
+	/// <summary>
+	/// それそれの状況による衝突判定
+	/// </summary>
 	void Stage::ImpactCheck()
 	{
-		if (playermanager::PlayerManager::Instance().GetPlayer()->player_invi_count > 0)
+		if (PLAYER_MANAGER().GetPlayer()->player_invi_count > ZERO)
 		{ 
-			playermanager::PlayerManager::Instance().GetPlayer()->player_invi_count --;
+			PLAYER_MANAGER().GetPlayer()->player_invi_count --;
 		}
 
 		//Playerとモンスターの衝突判定
-		for (int index = 0; index < ENEMY_MAX; index++)
+		for (int index = ZERO; index < ENEMY_MAX; index++)
 		{
-			if (playermanager::PlayerManager::Instance().GetPlayer()->player_invi_count <= 0)
+			if (PLAYER_MANAGER().GetPlayer()->player_invi_count <= ZERO)
 			{
-				if ((monstermanager::MonsterManager::Instance().GetEnemy(index)->isActive) &&
-					(base::TYPE::Enemy == monstermanager::MonsterManager::Instance().GetEnemy(index)->_type) &&
-					(playermanager::PlayerManager::Instance().GetPlayer()->
-						ConfirmImpact(monstermanager::MonsterManager::Instance().GetEnemy(index))))
+				if ((MONSTER_MANAGER().GetEnemy(index)->_isActive) &&
+					(base::TYPE::Enemy == MONSTER_MANAGER().GetEnemy(index)->_type) &&
+					(MONSTER_MANAGER().GetEnemy(index)->_isActive) &&
+					(PLAYER_MANAGER().GetPlayer()->ConfirmImpact(MONSTER_MANAGER().GetEnemy(index))))
 				{
-					gamedata.Player_HP -= 1;
-					monstermanager::MonsterManager::Instance().GetEnemy(index)->isActive = false;
-					playermanager::PlayerManager::Instance().GetPlayer()->player_invi_count = 100;
+					GAME_DATA().Player_HP -= 1;
+					MONSTER_MANAGER().GetEnemy(index)->_isActive = false;
+					PLAYER_MANAGER().GetPlayer()->player_invi_count = 100;
 				}
 			}
 		}
 
 		//Playerとモンスター弾丸と衝突判定
-		for (int count = 0; count < BULLET_MAX; count++)
+		for (int count = ZERO; count < BULLET_MAX; count++)
 		{
-			if (playermanager::PlayerManager::Instance().GetPlayer()->player_invi_count > 0) { break; }
+			if (PLAYER_MANAGER().GetPlayer()->player_invi_count > ZERO) { break; }
 
-			if ((bulletmanager::BulletManager::Instance().Getbullet(count)->isActive) &&
-				(base::TYPE::EnemyBullet == bulletmanager::BulletManager::Instance().Getbullet(count)->_type) &&
-				(playermanager::PlayerManager::Instance().GetPlayer()->
-					ConfirmImpact(bulletmanager::BulletManager::Instance().Getbullet(count))))
+			if ((BULLET_MANAGER().Getbullet(count)->_isActive) &&
+				(base::TYPE::EnemyBullet == BULLET_MANAGER().Getbullet(count)->_type) &&
+				(PLAYER_MANAGER().GetPlayer()->ConfirmImpact(BULLET_MANAGER().Getbullet(count))))
 			{
-				gamedata.Player_HP -= 1;
-				bulletmanager::BulletManager::Instance().Getbullet(count)->isActive = false;
-				playermanager::PlayerManager::Instance().GetPlayer()->player_invi_count = 100;
+				GAME_DATA().Player_HP -= 1;
+				BULLET_MANAGER().Getbullet(count)->_isActive = false;
+				PLAYER_MANAGER().GetPlayer()->player_invi_count = 100;
 			}
 			
 			//モンスターとPlayer弾丸と衝突判定
-			for (int index = 0; index < ENEMY_MAX; index++)
+			for (int index = ZERO; index < ENEMY_MAX; index++)
 			{
-				if (monstermanager::MonsterManager::Instance().GetEnemy(index)->isActive != false)
+				if (MONSTER_MANAGER().GetEnemy(index)->_isActive != false)
 				{
-					if ((bulletmanager::BulletManager::Instance().Getbullet(count)->isActive) &&
-						(base::TYPE::PlayerBullet == bulletmanager::BulletManager::Instance().Getbullet(count)->_type) &&
-						(monstermanager::MonsterManager::Instance().GetEnemy(index)->ConfirmImpact(bulletmanager::BulletManager::Instance().Getbullet(count))))
+					if ((BULLET_MANAGER().Getbullet(count)->_isActive) &&
+						(base::TYPE::PlayerBullet ==BULLET_MANAGER().Getbullet(count)->_type) &&
+						(MONSTER_MANAGER().GetEnemy(index)->ConfirmImpact(BULLET_MANAGER().Getbullet(count))))
 					{
-						gamedata.Score += 10;
-						monstermanager::MonsterManager::Instance().GetEnemy(index)->isActive = false;
-						bulletmanager::BulletManager::Instance().Getbullet(count)->isActive = false;
-					}
-					break;
-				}
-			}
-		}
-		for (int count = 0; count < BULLET_MAX; count++)
-		{
-			if ((bulletmanager::BulletManager::Instance().Getbullet(count)->isActive) &&
-				(base::TYPE::EnemyBullet == bulletmanager::BulletManager::Instance().Getbullet(count)->_type) &&
-				(bulletmanager::BulletManager::Instance().Getbullet(count)->
-					ConfirmImpact(bulletmanager::BulletManager::Instance().Getbullet(count))))
-			{
-				for (int index = 0; index < ENEMY_MAX; index++)
-				{
-					if (monstermanager::MonsterManager::Instance().GetEnemy(index)->isActive != false)
-					{
-						if ((bulletmanager::BulletManager::Instance().Getbullet(count)->isActive) &&
-							(base::TYPE::PlayerBullet == bulletmanager::BulletManager::Instance().Getbullet(count)->_type) &&
-							(monstermanager::MonsterManager::Instance().GetEnemy(index)->ConfirmImpact(bulletmanager::BulletManager::Instance().Getbullet(count))))
+						MONSTER_MANAGER().GetEnemy(index)->Monster_HP -=PLAYER_MANAGER().GetPlayer()->_damage;
+
+						//モンスターのHPが0になった時
+						if (MONSTER_MANAGER().GetEnemy(index)->Monster_HP <= 0)
 						{
-							gamedata.Score += 10;
-							monstermanager::MonsterManager::Instance().GetEnemy(index)->isActive = false;
-							bulletmanager::BulletManager::Instance().Getbullet(count)->isActive = false;
+							MONSTER_MANAGER().GetEnemy(index)->_isActive = false;
+							BULLET_MANAGER().Getbullet(count)->_isActive = false;
+							if (MONSTER_MANAGER().GetEnemy(index)->_Monster_ID == NORMAL_MONSTER_ID)
+							{
+								GAME_DATA().Score += 10;
+							}
+							else if (MONSTER_MANAGER().GetEnemy(index)->_Monster_ID >= BOSS_MONSTER_ID)
+							{
+								GAME_DATA().Score += 1294404;
+								ReadyNextStage();
+							}
 						}
-						break;
 					}
-				}
-				break;
-			}
-		}
-
-		//BossモンスターがPlayerの弾丸と衝突判定
-		for (int count = 0; count < BULLET_MAX; count++)
-		{
-			if ((bulletmanager::BulletManager::Instance().Getbullet(count)->isActive) &&
-				(base::TYPE::PlayerBullet == bulletmanager::BulletManager::Instance().Getbullet(count)->_type) &&
-				(monstermanager::MonsterManager::Instance().GetBoss()->ConfirmImpact(bulletmanager::BulletManager::Instance().Getbullet(count))))
-			{
-				monstermanager::MonsterManager::Instance().GetBoss()->Monster_HP -=
-				playermanager::PlayerManager::Instance().GetPlayer()->damage;
-				bulletmanager::BulletManager::Instance().Getbullet(count)->isActive = false;
-
-				if (monstermanager::MonsterManager::Instance().GetBoss()->Monster_HP <= 0)
-				{
-					monstermanager::MonsterManager::Instance().GetBoss()->isActive = false;
-					gamedata.Score += 1294404;
-					ResetFunc();
 				}
 			}
 		}
 	}
 
+	/// <summary>
+	/// 決めた時間になったのかを計算して次の段階に移動するかを判断する
+	/// </summary>
 	void Stage::CheckFinalize()
 	{
-		
+		switch (_stagestate)
+		{
+		case StageState::Stage01:
+			if (_nowSecond == END_TIME)
+			{ReadyNextStage();}
+			break;
+		case StageState::Stage02:
+			if (_nowSecond > (END_TIME + (_stagestate * 10)))
+			{ReadyNextStage();}
+			break;
+		case StageState::Stage03:
+			if (_nowSecond > (END_TIME + (_stagestate * 10)))
+			{ReadyNextStage();}
+			break;
+		}
+	}
+	/// <summary>
+	/// 時間を初期化してステージを切り替える
+	/// </summary>
+	void Stage::ReadyNextStage()
+	{
+		TIME_RESET;
+		Initialize();
+
+		switch (_stagestate)
+		{
+		case StageState::Stage01:
+			_stagestate = StageState::Stage02;
+			break;
+		case StageState::Stage02:
+			_stagestate = StageState::Stage03;
+			break;
+		case StageState::Stage03:
+			_NextState = true;
+			Finalize();
+			break;
+		}
 	}
 
-	void Stage::ResetFunc()
+	/// <summary>
+	/// プレイヤーのHPが0以下になったらゲームオーバー
+	/// </summary>
+	void Stage::CheckGameOver()
 	{
-		int nowSecond = (_time_count - _begin_time) / 1000;
-		if (nowSecond > (END_TIME + (StageID * 10)))
+		if (GAME_DATA().Player_HP == ZERO)
 		{
-			_begin_time = 0;
-			_time_count = 0;
-			nowSecond = 0;
-			StageID++;
-			Initialize();
-			if (StageID == (STAGE_MAX - 3))
+			GAME_DATA().Stage_Level = (_stagestate + 1);
+			_NextState = true;
+		}
+	}
+
+	/// <summary>
+	/// 使用している変数などを初期化
+	/// </summary>
+	void Stage::InitVar()
+	{
+		TIME_RESET;
+		GAME_DATA().Reset();
+		_NextState = false;
+
+		for (int index = ZERO; index < StageState::Stage_Max; index++)
+		{
+			for (int count = ZERO; count < MOVE_COUNTER; count++)
 			{
-				stagemanager.SetNextStage(StageState::Stage02);
-			}
-			else if (StageID == (STAGE_MAX - 2))
-			{
-				monstermanager::MonsterManager::Instance().GetBoss()->Monster_ID++;
-				monstermanager::MonsterManager::Instance().GetBoss()->Monster_HP = BOSS_HP;
-				stagemanager.SetNextStage(StageState::Stage03);
-			}
-			else if ((StageID == (STAGE_MAX - 1)) || ((StageID == STAGE_MAX)))
-			{
-				stagemanager.SetNextStage(StageState::Result);
+				_monster_table[index][count].isActive = true;
 			}
 		}
 	}
 
-	void Stage::CheckGameOver()
+	void Stage::Pause()
 	{
-		if (gamedata.Player_HP <= 0)
+		if (keyboard::GetKeyTrigger(KEY_INPUT_P))
 		{
-			_begin_time = 0;
-			_time_count = 0;
-			stagemanager.SetNextStage(StageState::Result);
+			_isPause = !_isPause;
 		}
 	}
 
 	void Stage::Finalize()
 	{
-
+		SetNextState(scene::State::Result);
 	}
 }

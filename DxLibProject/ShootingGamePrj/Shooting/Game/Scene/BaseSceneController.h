@@ -1,14 +1,14 @@
 #pragma once
 //--------------------------------------------------------------
+//------------System Header
+#include "..\..\System.h"
+
+//--------------------------------------------------------------
 //------------include
 #include "SceneStateh.h"
 #include <memory>
 #include "DxLib.h"
 #include "..\..\Manager\InputKey.h"
-
-extern int WINDOW_SIZE_X;
-extern int WINDOW_SIZE_Y;
-
 
 namespace scene
 {

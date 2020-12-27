@@ -1,25 +1,23 @@
-#include "StageManager.h"
-
 //--------------------------------------------------------------
 //------------include Header
 #include "..\Stage\Stage.h"
-
-
+#include "StageManager.h"
 
 namespace scene
 {
 	game::Stage stage;
 
 	/// <summary>
-	/// 最初のステージをInitializeする。
+	/// ステージと情報、オブジェクトを初期化。
 	/// </summary>
 	void StageManager::Initialize()			
 	{
-		_stagestate = StageState::Stage01;	//最初のステージを指定する。
+		_stagestate = StageState::Stage01;
 
-		playermanager::PlayerManager::Instance().Initialize();
-		monstermanager::MonsterManager::Instance().Initialize();
-		bulletmanager::BulletManager::Instance().Initialize();
+		stage.InitVar();
+		PLAYER_MANAGER().Initialize();
+		MONSTER_MANAGER().Initialize();
+		BULLET_MANAGER().Initialize();
 
 		stage.Initialize();
 	}
@@ -31,9 +29,10 @@ namespace scene
 	{
 		stage.Update();
 
-		if (this->Stage() == StageState::Result)
+		if (stage._NextState)
 		{
 			this->Finalize();
+			SetNextState(State::Result);
 		}
 	}
 
@@ -42,6 +41,6 @@ namespace scene
 	/// </summary>
 	void StageManager::Finalize()
 	{
-		SetNextState(State::Result);		//位置最後に結果画面を出す。
+
 	}
 }

@@ -1,3 +1,5 @@
+//--------------------------------------------------------------
+//------------include Header
 #include "DxLib.h"
 #include "..\..\Manager\BaseObject.h"
 
@@ -8,28 +10,30 @@ namespace monster
 	public:
 		Monster() : BaseObject(base::TYPE::Enemy)
 		{
+			_Monster_ID = 0;
+			_speed = 15;
 
-			pos_x = 1000;
-			pos_y = 1000;
-			isActive = false;
-			isPlayer = false;
+			_isPlayer = false;
 		}
 		~Monster() = default;
 
 	public:
 		void Initialize();
 		void CalkTask();
-		void GetPosition(int, int, int, int);
+		void GetPosition(int, int, int, int, int, int);
+		void ShootBullet();
 		void Draw();
 		void Finalize();
 
+		void NormalMonsterMove();
+		void BossMonsterMove();
+
 	public:
-		const int Monster_ID = 0;
+		int _Monster_ID, Monster_HP;
 
 	private:
-		int _Monster_img;								//モンスターのイメージ
-		int monster_speed_x, monster_speed_y;
-		const int monster_speed = 15;
+		int _img;								//モンスターのイメージ
+		float monster_speed_x, monster_speed_y;
 		int dest_pos_x, dest_pos_y, get_monster_pos_x, get_monster_pos_y;
 	};
 }

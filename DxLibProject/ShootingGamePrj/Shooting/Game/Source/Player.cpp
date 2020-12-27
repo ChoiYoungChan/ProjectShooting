@@ -1,3 +1,5 @@
+//--------------------------------------------------------------
+//------------include Header
 #include "Player.h"
 
 
@@ -7,44 +9,52 @@ namespace play_user
 	{
 		_Player_img = LoadGraph("Resource/Player.png");
 	}
+
 	/// <summary>
 	/// プレイヤーの移動制限
 	/// </summary>
 	void Player::CalkTask()
 	{
 		if (keyboard::GetKey(KEY_INPUT_RIGHT) >= 1) {
-			pos_x += speed;
+			_pos_x += _speed;
 		}
 		if (keyboard::GetKey(KEY_INPUT_DOWN) >= 1) {
-			pos_y += speed;
+			_pos_y += _speed;
 		}
 		if (keyboard::GetKey(KEY_INPUT_LEFT) >= 1) {
-			pos_x -= speed;
+			_pos_x -= _speed;
 		}
 		if (keyboard::GetKey(KEY_INPUT_UP) >= 1) {
-			pos_y -= speed;
+			_pos_y -= _speed;
 		}
 		if (keyboard::GetKey(KEY_INPUT_Z) >= 1)
 		{
-			bulletmanager::BulletManager::Instance().SetBullet(true, bullet_shooter, pos_x, (pos_y - 50));
+			BULLET_MANAGER().SetBullet(true, _Player_ID, _pos_x, (_pos_y - 10));
 		}
-		if (pos_x < 0)
+		MoveLimit();
+	}
+
+	/// <summary>
+	/// プレイヤーの移動制限
+	/// </summary>
+	void Player::MoveLimit()
+	{
+		if (_pos_x < 0)
 		{
-			pos_x = 10;
+			_pos_x = 10;
 		}
-		if (pos_x >= WINDOW_SIZE_X)
+		if (_pos_x >= WINDOW_SIZE_X)
 		{
-			pos_x = PLAYER_MAX_POS_X;
+			_pos_x = PLAYER_MAX_POS_X;
 		}
-		if (pos_y <= 100)
+		if (_pos_y <= 200)
 		{
-			pos_y = 100;
+			_pos_y = 200;
 		}
-		if (pos_y >= WINDOW_SIZE_Y)
+		if (_pos_y >= WINDOW_SIZE_Y)
 		{
-			pos_y = PLAYER_MAX_POS_Y;
+			_pos_y = PLAYER_MAX_POS_Y;
 		}
-		
 	}
 
 	/// <summary>
@@ -54,12 +64,13 @@ namespace play_user
 	{
 		if (player_invi_count % 2 == 0)
 		{
-			DrawRotaGraph(pos_x, pos_y, 1, 0, _Player_img, true);
+			DrawCircle(_pos_x, _pos_y, _radius, GetColor(255, 0, 0), false);
+			DrawRotaGraph(_pos_x, _pos_y, 1, 0, _Player_img, true);
 		}
 	}
 
 	void Player::Finalize()
 	{
-		isActive = false;
+		_isActive = false;
 	}
 }

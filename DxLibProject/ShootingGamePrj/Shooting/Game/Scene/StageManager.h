@@ -2,6 +2,7 @@
 //------------include
 #pragma once
 #include "BaseSceneController.h"
+#include "Result.h"
 #include "..\..\Manager\GameData.h"
 
 namespace scene
@@ -9,7 +10,8 @@ namespace scene
 	class StageManager : public BaseScene
 	{
 	public:
-		StageManager() : BaseScene(State::InGame) {}
+		StageManager() : BaseScene(State::InGame)
+		{}
 		~StageManager() = default;
 
 	public:
@@ -17,26 +19,18 @@ namespace scene
 		void Update() override;
 		void Finalize() override;
 
-		enum class StageState							//Œ»İ‚ÌStage‚ğŠÇ—‚·‚é‚½‚ß‚Ìenum class
+		enum StageState							//Œ»İ‚ÌStage‚ğŠÇ—‚·‚é‚½‚ß‚Ìenum class
 		{
-			None,
-
-			Stage01,
+			Stage01 = 0,
 			Stage02,
 			Stage03,
-			Result
+			Stage_Max
 		};
-		StageState _stagestate = StageState::None;
-		StageState _nextstage = StageState::None;
-
-		void SetNextStage(const StageState nextstage) { _nextstage = nextstage; }
-		//bool isNextStage() const { return (_nextstage != StageState::None); }
-
-	private:
+		StageState _stagestate;
 
 		StageState Stage() const { return _stagestate; }
-		//StageState NextStage() const { return _nextstage; }
-		
 
+	private:
+		
 	};
 }
