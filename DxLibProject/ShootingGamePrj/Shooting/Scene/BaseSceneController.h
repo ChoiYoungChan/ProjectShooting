@@ -16,7 +16,7 @@ namespace scene
 		{
 			_state = state;
 		}
-		virtual ~BaseScene() = default;
+		~BaseScene() = default;
 
 	private:
 		//èdï°ã÷é~

@@ -2,6 +2,9 @@
 #include "..\Scene\Manager\InputKey.h"
 #include "PlayerBullet.h"
 
+extern int WINDOW_SIZE_X;
+extern int WINDOW_SIZE_Y;
+
 namespace play_user
 {
 	class Player
@@ -9,18 +12,12 @@ namespace play_user
 	public:
 		Player()
 		{
-			player_radius =	25;
-			player_bullet_radius = 30;
 			shoot_count = 0;
 
 			player_pos_x = 300;
 			player_pos_y = 600;
-			_WINDOW_SIZE_X = 720;
-			_WINDOW_SIZE_Y = 720;
-			PLAYER_MAX_POS_X = _WINDOW_SIZE_X - 10;
-			PLAYER_MAX_POS_Y = _WINDOW_SIZE_Y - 10;
-
-			MAX_BULLET_COUNT = 50;
+			PLAYER_MAX_POS_X = WINDOW_SIZE_X - 10;
+			PLAYER_MAX_POS_Y = WINDOW_SIZE_Y - 10;
 		}
 		~Player() = default;
 
@@ -28,23 +25,23 @@ namespace play_user
 
 		void Initialize();
 		void Update();
+		void DrawTask();
 		void Finalize();
+
+		PlayerBullet shoot[50];
 
 	public:
 		int Player_HP;														//プレイヤーのHP
 		int player_pos_x, player_pos_y, speed, shoot_count;					//プレイヤーの位置と移動スピード、打つ事をコントロールする変数
-		int player_radius, player_bullet_radius;							//プレイヤーの半径と弾丸の半径
+		const int player_radius = 25, player_bullet_radius = 30;			//プレイヤーの半径と弾丸の半径
+		const int MAX_BULLET_COUNT = 50;									//弾丸の最大数
 
 	private:
 
-		PlayerBullet shoot[50];
 		void CalkTask();
-		void DrawTask();
 
 	private:
-		int MAX_BULLET_COUNT;												//弾丸の最大数
 		int _Player_img;													//プレイヤーのイメージ
-		int _WINDOW_SIZE_X, _WINDOW_SIZE_Y;									//プレイヤーの移動制限するための画面サイズ
 		int PLAYER_MAX_POS_X;												//プレイヤーのX軸の移動制限する
 		int PLAYER_MAX_POS_Y;												//プレイヤーのY軸の移動制限する
 	};

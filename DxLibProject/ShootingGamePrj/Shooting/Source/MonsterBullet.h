@@ -28,7 +28,6 @@ namespace monster
 		int _Bullet_img;						//モンスターの弾丸リソースをLoad
 		int shootnumber, bullet_speed;			//弾丸を打った時を区分する数字とdefaultの弾丸の速度
 		int _damage;							//ダメージ
-		int WINDOW_SIZE_X = 720, WINDOW_SIZE_Y = 720;
 		float bullet_speed_x, bullet_speed_y;
 
 	};

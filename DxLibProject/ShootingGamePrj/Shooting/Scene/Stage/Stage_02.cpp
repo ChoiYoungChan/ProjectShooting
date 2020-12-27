@@ -5,7 +5,7 @@ namespace game
 	
 	void Stage02::Initialize()
 	{
-		
+
 	}
 	void Stage02::Update()
 	{

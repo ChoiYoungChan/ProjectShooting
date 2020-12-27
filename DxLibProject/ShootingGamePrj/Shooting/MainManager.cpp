@@ -15,7 +15,6 @@ namespace MainManager
 	
 	int MainManager::MainLoop()
 	{
-		_loopcount = 0;
 		_scene->Update();
 		if (_scene->isSetNextState())									//Ÿ‚Ìscene‚ª€”õ‚³‚ê‚Ä‚¢‚½‚çscene‚ğØ‚è‘Ö‚¦
 		{

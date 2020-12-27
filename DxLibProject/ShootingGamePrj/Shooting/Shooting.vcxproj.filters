@@ -25,6 +25,9 @@
     <Filter Include="ソース ファイル\Scene\Manager">
       <UniqueIdentifier>{46e63417-5af8-4e72-b871-493d369bc2cd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Resource">
+      <UniqueIdentifier>{f40c53ae-8269-4a32-940f-451f465219ad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -72,6 +75,9 @@
     <ClCompile Include="Source\MonsterBullet.cpp">
       <Filter>ソース ファイル\Source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Stage02BulletHell.cpp">
+      <Filter>ソース ファイル\Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Player.h">
@@ -107,9 +113,6 @@
     <ClInclude Include="MainManager.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\Manager\Singleton.h">
-      <Filter>ソース ファイル\Scene\Manager</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Monster.h">
       <Filter>ソース ファイル\Source</Filter>
     </ClInclude>
@@ -122,5 +125,31 @@
     <ClInclude Include="Source\MonsterBullet.h">
       <Filter>ソース ファイル\Source</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Stage02BulletHell.h">
+      <Filter>ソース ファイル\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Exit.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource\Bullet_0001.png">
+      <Filter>ソース ファイル\Resource</Filter>
+    </Image>
+    <Image Include="Resource\Bullet_0003.png">
+      <Filter>ソース ファイル\Resource</Filter>
+    </Image>
+    <Image Include="Resource\Bullet_0005.png">
+      <Filter>ソース ファイル\Resource</Filter>
+    </Image>
+    <Image Include="Resource\Monster_0001.png">
+      <Filter>ソース ファイル\Resource</Filter>
+    </Image>
+    <Image Include="Resource\Moriya.png">
+      <Filter>ソース ファイル\Resource</Filter>
+    </Image>
+    <Image Include="Resource\Player.png">
+      <Filter>ソース ファイル\Resource</Filter>
+    </Image>
   </ItemGroup>
 </Project>

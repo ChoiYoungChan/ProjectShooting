@@ -9,6 +9,7 @@
 #include "Result.h"
 #include "Option.h"
 #include "StageManager.h"
+#include "Exit.h"
 
 using namespace std;
 
@@ -32,6 +33,9 @@ namespace scene
 			break;
 		case State::Options:
 			move_scene = make_unique<Option>();
+			break;
+		case State::Exit:
+			move_scene = make_unique<Exit>();
 			break;
 		default:
 			assert(false);							//‘Î‰ž‚µ‚Ä‚¢‚È‚¢ƒNƒ‰ƒX‚Íassert‚·‚é

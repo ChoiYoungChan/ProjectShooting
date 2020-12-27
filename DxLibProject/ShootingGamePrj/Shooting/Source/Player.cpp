@@ -4,9 +4,13 @@ namespace play_user
 {
 	void Player::Initialize()
 	{
-		_Player_img = LoadGraph("Player.png");
+		_Player_img = LoadGraph("Resource/Player.png");
 		speed = 15;
 		Player_HP = 3;
+		for (int index = 0; index < MAX_BULLET_COUNT; index++)
+		{
+			shoot[index].Initialize();
+		}
 	}
 
 	/// <summary>
@@ -38,18 +42,22 @@ namespace play_user
 		}
 		if (keyboard::GetKey(KEY_INPUT_Z) >= 1)
 		{
-			shoot[shoot_count].Initialize(player_pos_x, player_pos_y);
+			shoot[shoot_count].GetPosition(player_pos_x, player_pos_y);
 			shoot_count++;
 			if (shoot_count >= MAX_BULLET_COUNT)
 			{
 				shoot_count = 0;
 			}
 		}
+		for (int count = 0; count < MAX_BULLET_COUNT; count++)
+		{
+			shoot[count].Update();
+		}
 		if (player_pos_x < 0)
 		{
 			player_pos_x = 10;
 		}
-		if (player_pos_x >= _WINDOW_SIZE_X)
+		if (player_pos_x >= WINDOW_SIZE_X)
 		{
 			player_pos_x = PLAYER_MAX_POS_X;
 		}
@@ -57,7 +65,7 @@ namespace play_user
 		{
 			player_pos_y = 200;
 		}
-		if (player_pos_y >= _WINDOW_SIZE_Y)
+		if (player_pos_y >= WINDOW_SIZE_Y)
 		{
 			player_pos_y = PLAYER_MAX_POS_Y;
 		}
@@ -72,7 +80,7 @@ namespace play_user
 
 		for (int count = 0; count < MAX_BULLET_COUNT; count++)
 		{
-			shoot[count].Update();
+			shoot[count].DrawTask();
 		}
 	}
 
