@@ -6,6 +6,10 @@
 #include "DxLib.h"
 #include "..\..\Manager\InputKey.h"
 
+extern int WINDOW_SIZE_X;
+extern int WINDOW_SIZE_Y;
+
+
 namespace scene
 {
 	class BaseScene

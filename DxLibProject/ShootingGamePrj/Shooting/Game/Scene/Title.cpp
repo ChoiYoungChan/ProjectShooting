@@ -6,14 +6,17 @@ namespace scene
 	{
 		SetBackgroundColor(0, 200, 0);
 		G_SelectNumber = 0;
-		
+		MovieGraphHandle = LoadGraph("Resource/TitleBackGround.mp4");
 	}
 	/// <summary>
 	/// “ü—Í‚ğó‚¯‚Äƒƒjƒ…‚ÌˆÚ“®‚Æ‘I‘ğ‚·‚éŠÖ”
 	/// </summary>
 	void Title::Update()
 	{
-		DrawRotaGraph(500, 500, 1,0, LoadGraph("Resource/Torii.png"),true);
+		PlayMovieToGraph(MovieGraphHandle);
+
+		DrawRotaGraph(400, 500, 1,0, LoadGraph("Resource/Torii.png"),true);
+		DrawRotaGraph(400, 500, 1, 0, MovieGraphHandle, false);
 
 		if (keyboard::GetKey(KEY_INPUT_DOWN) == 1)
 		{

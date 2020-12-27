@@ -16,6 +16,11 @@ namespace scene
 	void StageManager::Initialize()			
 	{
 		_stagestate = StageState::Stage01;	//最初のステージを指定する。
+
+		playermanager::PlayerManager::Instance().Initialize();
+		monstermanager::MonsterManager::Instance().Initialize();
+		bulletmanager::BulletManager::Instance().Initialize();
+
 		stage.Initialize();
 	}
 

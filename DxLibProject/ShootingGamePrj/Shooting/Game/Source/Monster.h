@@ -1,8 +1,5 @@
 #include "DxLib.h"
-#include <memory>
 #include "..\..\Manager\BaseObject.h"
-#include "..\Source\Bullet.h"
-#include "..\..\Manager\BulletManager.h"
 
 namespace monster
 {
@@ -11,6 +8,7 @@ namespace monster
 	public:
 		Monster() : BaseObject(base::TYPE::Enemy)
 		{
+
 			pos_x = 1000;
 			pos_y = 1000;
 			isActive = false;
@@ -20,16 +18,16 @@ namespace monster
 
 	public:
 		void Initialize();
-		void Update();
 		void CalkTask();
 		void GetPosition(int, int, int, int);
 		void Draw();
 		void Finalize();
+
 	public:
-		const int Monster_ID = 1;
+		const int Monster_ID = 0;
 
 	private:
-		int _Monster_img;									//モンスターのイメージ
+		int _Monster_img;								//モンスターのイメージ
 		int monster_speed_x, monster_speed_y;
 		const int monster_speed = 15;
 		int dest_pos_x, dest_pos_y, get_monster_pos_x, get_monster_pos_y;

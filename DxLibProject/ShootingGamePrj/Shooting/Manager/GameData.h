@@ -3,13 +3,13 @@
 
 namespace data
 {
-	class GameData : public singleton::Singleton
+	class GameData
 	{
 	public:
 		GameData()
 		{
 			Score = 0;
-			Player_HP = 3;
+			Player_HP = 30;
 		}
 		~GameData() = default;
 	public:
@@ -20,6 +20,5 @@ namespace data
 		int Player_HP;
 
 	private:
-		friend class singleton::Singleton;
 	};
 }

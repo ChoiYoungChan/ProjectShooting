@@ -1,6 +1,8 @@
 #pragma once
 #include <math.h>
 
+#define BULLET_MAX 1000
+
 extern int WINDOW_SIZE_X;
 extern int WINDOW_SIZE_Y;
 
@@ -26,19 +28,17 @@ namespace base
 		{
 			_type = type;
 		}
-		TYPE GetType() {
-			return _type;
-		}
 
 		~BaseObject() = default;
 
 	public:
 		TYPE _type;
-		const int _radius = 30;
+		int _radius = 10;
+		const int damage = 10;
 		int pos_x, pos_y;
-		bool isActive = false;
-		bool isPlayer = true;
+		bool isActive = false, isPlayer = true;
 		float distance;
+		int bullet_shooter;
 
 	public:
 		bool ConfirmImpact(BaseObject* otherobj);
