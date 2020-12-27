@@ -48,21 +48,6 @@
     <ClCompile Include="Game\Source\Player.cpp">
       <Filter>ソース ファイル\Game\Source</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Source\Stage02BulletHell.cpp">
-      <Filter>ソース ファイル\Game\Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Game\Source\Stage03BulletHell.cpp">
-      <Filter>ソース ファイル\Game\Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Game\Stage\Stage_01.cpp">
-      <Filter>ソース ファイル\Game\Stage</Filter>
-    </ClCompile>
-    <ClCompile Include="Game\Stage\Stage_02.cpp">
-      <Filter>ソース ファイル\Game\Stage</Filter>
-    </ClCompile>
-    <ClCompile Include="Game\Stage\Stage_03.cpp">
-      <Filter>ソース ファイル\Game\Stage</Filter>
-    </ClCompile>
     <ClCompile Include="Game\Scene\BaseSceneController.cpp">
       <Filter>ソース ファイル\Game\Scene</Filter>
     </ClCompile>
@@ -87,6 +72,21 @@
     <ClCompile Include="Manager\InputKey.cpp">
       <Filter>ソース ファイル\Manager</Filter>
     </ClCompile>
+    <ClCompile Include="Manager\BulletManager.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\MonsterManager.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Source\BulletHell.cpp">
+      <Filter>ソース ファイル\Game\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Stage\Stage.cpp">
+      <Filter>ソース ファイル\Game\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Source\BossMonster.cpp">
+      <Filter>ソース ファイル\Game\Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainManager.h">
@@ -100,21 +100,6 @@
     </ClInclude>
     <ClInclude Include="Game\Source\Player.h">
       <Filter>ソース ファイル\Game\Source</Filter>
-    </ClInclude>
-    <ClInclude Include="Game\Source\Stage02BulletHell.h">
-      <Filter>ソース ファイル\Game\Source</Filter>
-    </ClInclude>
-    <ClInclude Include="Game\Source\Stage03BulletHell.h">
-      <Filter>ソース ファイル\Game\Source</Filter>
-    </ClInclude>
-    <ClInclude Include="Game\Stage\Stage_01.h">
-      <Filter>ソース ファイル\Game\Stage</Filter>
-    </ClInclude>
-    <ClInclude Include="Game\Stage\Stage_02.h">
-      <Filter>ソース ファイル\Game\Stage</Filter>
-    </ClInclude>
-    <ClInclude Include="Game\Stage\Stage_03.h">
-      <Filter>ソース ファイル\Game\Stage</Filter>
     </ClInclude>
     <ClInclude Include="Game\Scene\BaseSceneController.h">
       <Filter>ソース ファイル\Game\Scene</Filter>
@@ -148,6 +133,21 @@
     </ClInclude>
     <ClInclude Include="Manager\Singleton.h">
       <Filter>ソース ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\BulletManager.h">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\MonsterManager.h">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Source\BulletHell.h">
+      <Filter>ソース ファイル\Game\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Stage\Stage.h">
+      <Filter>ソース ファイル\Game\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Source\BossMonster.h">
+      <Filter>ソース ファイル\Game\Source</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

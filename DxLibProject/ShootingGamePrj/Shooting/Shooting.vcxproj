@@ -155,19 +155,19 @@
     <ClCompile Include="Game\Scene\Result.cpp" />
     <ClCompile Include="Game\Scene\StageManager.cpp" />
     <ClCompile Include="Game\Scene\Title.cpp" />
+    <ClCompile Include="Game\Source\BossMonster.cpp" />
     <ClCompile Include="Game\Source\Bullet.cpp" />
+    <ClCompile Include="Game\Source\BulletHell.cpp" />
     <ClCompile Include="Game\Source\Monster.cpp" />
     <ClCompile Include="Game\Source\Player.cpp" />
-    <ClCompile Include="Game\Source\Stage02BulletHell.cpp" />
-    <ClCompile Include="Game\Source\Stage03BulletHell.cpp" />
-    <ClCompile Include="Game\Stage\Stage_01.cpp" />
-    <ClCompile Include="Game\Stage\Stage_02.cpp" />
-    <ClCompile Include="Game\Stage\Stage_03.cpp" />
+    <ClCompile Include="Game\Stage\Stage.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainManager.cpp" />
     <ClCompile Include="Manager\BaseObject.cpp" />
+    <ClCompile Include="Manager\BulletManager.cpp" />
     <ClCompile Include="Manager\GameData.cpp" />
     <ClCompile Include="Manager\InputKey.cpp" />
+    <ClCompile Include="Manager\MonsterManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game\Scene\BaseSceneController.h" />
@@ -177,18 +177,18 @@
     <ClInclude Include="Game\Scene\SceneStateh.h" />
     <ClInclude Include="Game\Scene\StageManager.h" />
     <ClInclude Include="Game\Scene\Title.h" />
+    <ClInclude Include="Game\Source\BossMonster.h" />
     <ClInclude Include="Game\Source\Bullet.h" />
+    <ClInclude Include="Game\Source\BulletHell.h" />
     <ClInclude Include="Game\Source\Monster.h" />
     <ClInclude Include="Game\Source\Player.h" />
-    <ClInclude Include="Game\Source\Stage02BulletHell.h" />
-    <ClInclude Include="Game\Source\Stage03BulletHell.h" />
-    <ClInclude Include="Game\Stage\Stage_01.h" />
-    <ClInclude Include="Game\Stage\Stage_02.h" />
-    <ClInclude Include="Game\Stage\Stage_03.h" />
+    <ClInclude Include="Game\Stage\Stage.h" />
     <ClInclude Include="MainManager.h" />
     <ClInclude Include="Manager\BaseObject.h" />
+    <ClInclude Include="Manager\BulletManager.h" />
     <ClInclude Include="Manager\GameData.h" />
     <ClInclude Include="Manager\InputKey.h" />
+    <ClInclude Include="Manager\MonsterManager.h" />
     <ClInclude Include="Manager\Singleton.h" />
   </ItemGroup>
   <ItemGroup>

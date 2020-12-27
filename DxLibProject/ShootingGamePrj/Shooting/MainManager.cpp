@@ -16,7 +16,7 @@ namespace MainManager
 	int MainManager::MainLoop()
 	{
 		_scene->Update();
-		if (_scene->isSetNextState())									//Ÿ‚Ìscene‚ª€”õ‚³‚ê‚Ä‚¢‚½‚çscene‚ğØ‚è‘Ö‚¦
+ 		if (_scene->isSetNextState())									//Ÿ‚Ìscene‚ª€”õ‚³‚ê‚Ä‚¢‚½‚çscene‚ğØ‚è‘Ö‚¦
 		{
 			_scene->Finalize();											//Œ»İ‚Ìscene‚ğFinalize‚·‚é
 			_scene = scene::MakeScene::create(_scene->Nextstate());		//Ÿ‚Ìscene‚ğì¬

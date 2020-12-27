@@ -1,22 +1,20 @@
-#include "DxLib.h"
-#include <memory>
+#pragma once
 #include "..\..\Manager\BaseObject.h"
 #include "..\Source\Bullet.h"
 #include "..\..\Manager\BulletManager.h"
 
 namespace monster
 {
-	class Monster : public base::BaseObject
+	class BossMonster : public base::BaseObject
 	{
 	public:
-		Monster() : BaseObject(base::TYPE::Enemy)
+		BossMonster() : BaseObject(base::TYPE::Enemy)
 		{
-			pos_x = 1000;
-			pos_y = 1000;
+
 			isActive = false;
 			isPlayer = false;
 		}
-		~Monster() = default;
+		~BossMonster() = default;
 
 	public:
 		void Initialize();
@@ -25,11 +23,9 @@ namespace monster
 		void GetPosition(int, int, int, int);
 		void Draw();
 		void Finalize();
-	public:
-		const int Monster_ID = 1;
 
 	private:
-		int _Monster_img;									//モンスターのイメージ
+		int Middle_Boss_Monster_img, Last_Boss_Monster_img;				//モンスターのイメージ
 		int monster_speed_x, monster_speed_y;
 		const int monster_speed = 15;
 		int dest_pos_x, dest_pos_y, get_monster_pos_x, get_monster_pos_y;

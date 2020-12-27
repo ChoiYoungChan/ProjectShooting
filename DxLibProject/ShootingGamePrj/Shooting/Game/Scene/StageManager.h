@@ -27,7 +27,15 @@ namespace scene
 			Result
 		};
 		StageState _stagestate = StageState::None;
+		StageState _nextstage = StageState::None;
+
+		void SetNextStage(const StageState nextstage) { _nextstage = nextstage; }
+		bool isNextStage() const { return (_nextstage != StageState::None); }
+
 	private:
+
+		StageState Stage() const { return _stagestate; }
+		StageState NextStage() const { return _nextstage; }
 		
 
 	};

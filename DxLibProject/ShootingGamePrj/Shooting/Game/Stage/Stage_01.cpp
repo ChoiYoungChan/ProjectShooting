@@ -5,24 +5,27 @@ namespace game
 	void Stage01::Initialize()
 	{
 		_begin_time = GetNowCount();
-		player.Initialize();						//プレイヤーをInitializeする	
-		for (int index = 0; index < MONSTER_COUNT; index++)
-		{
-			enemy[index].Initialize();				//モンスターをInitializeする
-		}
+
+		bulletManager = new bulletmanager::BulletManager();
+		player = new play_user::Player(bulletManager);
+		enemyManager = new monstermanager::MonsterManager(bulletManager);
+
+
+		player->Initialize();						//プレイヤーをInitializeする	
+		enemyManager->Initialize();
+		bulletManager->Initialize();
 	}
 
 	void Stage01::Update()
 	{
 		_time_count = GetNowCount();			//Stage01の時間を取って弾幕生成する際に使う変数
-		player.Update();						//プレイヤーの移動や表示などを適用する
+
+		player->Update();						//プレイヤーの移動や表示などを適用する
+		enemyManager->Update();
+		bulletManager->Update();
 
 		SpawnMonster();
-		for (int index = 0; index < MONSTER_COUNT; index++)
-		{
-			enemy[index].Update();
-		}
-		//CalkTask();								//衝突判定を計算する関数
+		CalkTask();								//衝突判定を計算する関数
 		Draw();									//モンスターとプレイヤーを表示する関数
 	}
 
@@ -37,30 +40,30 @@ namespace game
 	/// </summary>
 	void Stage01::Draw()
 	{
-		DrawFormatString(20, WINDOW_SIZE_Y - 20, GetColor(0, 255, 0), "Score : %d", gamedata.Score);
+		DrawFormatString(20,  WINDOW_SIZE_Y - 20, GetColor(0, 255, 0), "Score : %d", gamedata.Score);
 		DrawFormatString(300, WINDOW_SIZE_Y - 20, GetColor(0, 255, 0), "Life : %d", gamedata.Player_HP);
 		DrawFormatString(600, WINDOW_SIZE_Y - 20, GetColor(0, 255, 0), "Time : %d", (_time_count - _begin_time));
 
-		player.DrawTask();
-		for (int monster_count = 0; monster_count < MONSTER_COUNT; monster_count++)
-		{
-			enemy[monster_count].Draw();
-		}
+		player->DrawTask();
+		enemyManager->DrawTask();
+		bulletManager->DrawTask();
 	}
 
 	void Stage01::SpawnMonster()
 	{
-		for (int count = 0; count < move_counter; count++)
+		
+		for (int count = 0; count < MOVE_COUNTER; count++)
 		{
-			if ((_time_count - _begin_time) / 1000 == (monster_move[count].monster_spawn_time))
+			int nowSecond = (_time_count - _begin_time) / 1000;
+
+			if ((monster_table[count].isActive) && nowSecond == (monster_table[count].monster_spawn_time))
 			{
-				monster_move[count].isActive = false;
-				for (int index = 0; index < MONSTER_COUNT; index++)
-				{
-					enemy[index].GetPosition(monster_move[count].monster_pos_x + (index * 50), monster_move[count].monster_pos_y + (index * 50),
-						monster_move[count].destination_pos_x, monster_move[count].destination_pos_y,
-						player.pos_x, player.pos_y);
-				}
+				monster_table[count].isActive = false;
+
+				enemyManager->MonsterGetPos(monster_table[count].monster_pos_x,monster_table[count].monster_pos_y,
+											monster_table[count].destination_pos_x, monster_table[count].destination_pos_y
+											);
+				bulletManager->SetTarget(player->pos_x, player->pos_y);
 			}
 		}
 	}
@@ -70,15 +73,9 @@ namespace game
 	/// </summary>
 	void Stage01::CalkTask()
 	{
-		for (int index = 0; index < MONSTER_COUNT; index++)
-		{
-			if (enemy[index].pos_x > 0 && enemy[index].pos_x < WINDOW_SIZE_X - 50 &&
- 				enemy[index].pos_y > 0 && enemy[index].pos_y < WINDOW_SIZE_Y - 50)
-			{
-				//ImpactCalk(index);							//衝突判定をする関数
-			}
-		}
+
 	}
+
 	void Stage01::ImpactCheck()
 	{
 		for (auto it = listObjects.begin(); it != listObjects.end(); ++it)
