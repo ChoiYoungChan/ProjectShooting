@@ -12,7 +12,6 @@ namespace play_user
 			bullet_speed = 20;
 			bullet_pos_x = 300;
 			bullet_pos_y = 600;
-			_damage = 100;
 		}
 		~PlayerBullet() = default;
 
@@ -27,6 +26,5 @@ namespace play_user
 	private:
 		int _Bullet_img;						//弾丸のイメージ
 		int shootnumber, bullet_speed;			//弾丸の数と速度
-		int _damage;							//弾丸のダメージ
 	};
 }

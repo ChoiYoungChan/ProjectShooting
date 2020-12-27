@@ -2,6 +2,7 @@
 //------------include
 #pragma once
 #include "BaseSceneController.h"
+#include "Manager/GameData.h"
 
 namespace scene
 {

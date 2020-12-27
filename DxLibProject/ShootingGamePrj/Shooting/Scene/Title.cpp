@@ -6,12 +6,15 @@ namespace scene
 	{
 		SetBackgroundColor(0, 200, 0);
 		G_SelectNumber = 0;
+		
 	}
 	/// <summary>
 	/// “ü—Í‚ğó‚¯‚Äƒƒjƒ…‚ÌˆÚ“®‚Æ‘I‘ğ‚·‚éŠÖ”
 	/// </summary>
 	void Title::Update()
 	{
+		DrawRotaGraph(500, 500, 1,0, LoadGraph("Resource/Torii.png"),true);
+
 		if (keyboard::GetKey(KEY_INPUT_DOWN) == 1)
 		{
 			G_SelectNumber = (G_SelectNumber + 1) % MENU;
@@ -58,5 +61,10 @@ namespace scene
 	void Title::Finalize()
 	{
 		SetBackgroundColor(0, 0, 0);
+		SoundController();
 	}	
+	void Title::SoundController()
+	{
+		StopSound();
+	}
 }

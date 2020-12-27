@@ -78,6 +78,18 @@
     <ClCompile Include="Source\Stage02BulletHell.cpp">
       <Filter>ソース ファイル\Source</Filter>
     </ClCompile>
+    <ClCompile Include="Scene\Manager\GameData.cpp">
+      <Filter>ソース ファイル\Scene\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Manager\BaseObject.cpp">
+      <Filter>ソース ファイル\Scene\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Bullet.cpp">
+      <Filter>ソース ファイル\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Stage03BulletHell.cpp">
+      <Filter>ソース ファイル\Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Player.h">
@@ -130,6 +142,24 @@
     </ClInclude>
     <ClInclude Include="Scene\Exit.h">
       <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Manager\FindContact.h">
+      <Filter>ソース ファイル\Scene\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Manager\GameData.h">
+      <Filter>ソース ファイル\Scene\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Manager\Singleton.h">
+      <Filter>ソース ファイル\Scene\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Manager\BaseObject.h">
+      <Filter>ソース ファイル\Scene\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Bullet.h">
+      <Filter>ソース ファイル\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Stage03BulletHell.h">
+      <Filter>ソース ファイル\Source</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -18,5 +18,6 @@ namespace game
 
 	private:
 		int _time_count;
+		
 	};
 }

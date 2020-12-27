@@ -19,6 +19,7 @@ namespace scene
 		void Update() override;
 		void Finalize() override;
 		void GetGameData(int,int);
+		void DrawTask();
 
 	public:
 		int result_stage_number;

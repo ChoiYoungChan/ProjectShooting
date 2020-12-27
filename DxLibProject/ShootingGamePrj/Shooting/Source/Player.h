@@ -1,13 +1,11 @@
 #include "DxLib.h"
 #include "..\Scene\Manager\InputKey.h"
-#include "PlayerBullet.h"
-
-extern int WINDOW_SIZE_X;
-extern int WINDOW_SIZE_Y;
+#include "Bullet.h"
+#include "..\Scene\Manager\BaseObject.h"
 
 namespace play_user
 {
-	class Player
+	class Player : public base::BaseObject
 	{
 	public:
 		Player()
@@ -16,6 +14,7 @@ namespace play_user
 
 			player_pos_x = 300;
 			player_pos_y = 600;
+
 			PLAYER_MAX_POS_X = WINDOW_SIZE_X - 10;
 			PLAYER_MAX_POS_Y = WINDOW_SIZE_Y - 10;
 		}
@@ -28,21 +27,29 @@ namespace play_user
 		void DrawTask();
 		void Finalize();
 
-		PlayerBullet shoot[50];
+		//========================================
+		//-----Bullet
+		bullet::Bullet player_bullet[50];
 
 	public:
-		int Player_HP;														//プレイヤーのHP
-		int player_pos_x, player_pos_y, speed, shoot_count;					//プレイヤーの位置と移動スピード、打つ事をコントロールする変数
-		const int player_radius = 25, player_bullet_radius = 30;			//プレイヤーの半径と弾丸の半径
+		int player_pos_x, player_pos_y, shoot_count;					//プレイヤーの位置と移動スピード、打つ事をコントロールする変数
 		const int MAX_BULLET_COUNT = 50;									//弾丸の最大数
 
-	private:
+		//========================================
+		//-----Bullet
+		int bullet_pos_x, bullet_pos_y;			//弾丸の位置座標
 
+	private:
 		void CalkTask();
 
 	private:
 		int _Player_img;													//プレイヤーのイメージ
 		int PLAYER_MAX_POS_X;												//プレイヤーのX軸の移動制限する
 		int PLAYER_MAX_POS_Y;												//プレイヤーのY軸の移動制限する
+
+		//========================================
+		//-----Bullet
+		int _Bullet_img;						//弾丸のイメージ
+		int shootnumber;						//弾丸の数と速度
 	};
 }

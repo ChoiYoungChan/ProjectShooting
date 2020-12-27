@@ -16,6 +16,7 @@ namespace scene
 		void Initialize() override;
 		void Update() override;
 		void Finalize() override;
+		void SoundController();
 
 	private:
 		int G_SelectNumber;											// ‘I‘ğ‚³‚ê‚½ƒƒjƒ…[
