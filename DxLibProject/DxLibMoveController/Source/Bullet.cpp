@@ -2,14 +2,13 @@
 
 namespace bullet
 {
-	void Bullet::Start(int pos_x, int pos_y, int speed, int Bullet_img)
+	void Bullet::Initialize(int pos_x, int pos_y)
 	{
+		bullet_img = LoadGraph("Bullet_0003.png");
 		if (shootnumber == 1)
 		{
 			bullet_pos_x = pos_x;
 			bullet_pos_y = pos_y;
-			bullet_speed = speed;
-			bullet_img = Bullet_img;
 		}
 	}
 
@@ -23,8 +22,12 @@ namespace bullet
 		}
 		else
 		{
-			bullet_pos_y = -5;
+			bullet_pos_y = -5; 
 			shootnumber = 1;
 		}
+	}
+	void Bullet::Draw()
+	{
+
 	}
 }
