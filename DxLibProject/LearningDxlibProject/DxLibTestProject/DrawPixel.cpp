@@ -1,101 +1,84 @@
-//-------------------------
-//include 
-
+//=================================
+// include
 #include "DxLib.h"
+//=================================
+// include header
 
-//-------------------------
-//include.h
-void inputTask();
-void CalkTask();
-void DrawTask();
+//=================================
+// function& struct
+int key[256];
+int InputKeyValue()
+{
+	char tmpkey[256];
+	GetHitKeyStateAll(tmpkey);
+	for (int index = 0; index < 256; index++)
+	{
+		if (tmpkey[index] != 0)
+			key[index] ++;
+		else
+			key[index] = 0;
+	}
+	return 0;
+}
+typedef struct
+{
+	int menu_pos_x, menu_pos_y;
+	char name[256];
 
-//-------------------------
-//global var 
+}MenuElement_t;
 
-int pos_x = 200, pos_y = 720;
-int speed = 10;
-int img;
+//=================================
+// Global var
 
-int sceneState = 0;
+int SelectNumber;
 
-//-------------------------
-//function 
-
-
-int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
+int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
 	ChangeWindowMode(true);
-	SetGraphMode(480, 720 ,32);
-	
-	if (DxLib_Init () == -1)
+	SetGraphMode(480, 680, 32);
+	if (DxLib_Init() == -1)
 	{
 		return -1;
 	}
-
-	int counttime = GetNowCount();
-
-	img = LoadGraph("Bullet_0001.png");	
-
-	int time_st;
-	while (true)
+	
+	MenuElement_t MenuElement[3] =
 	{
-		time_st = GetNowCount();
+		{80,200, "Start Game"},
+		{100, 300, "Options"},
+		{100, 400, "Exit Game"},
+	};
+	SelectNumber = 0;
 
-		inputTask();
-
-		CalkTask();
-
-		DrawTask();
-
-		int wait_time = (1000 / 30);
-		wait_time	-= (GetNowCount() - time_st);
-		Sleep(wait_time);
-		if (ProcessMessage() != 0)
+	while (ScreenFlip() == 0 && ProcessMessage() == 0 && ClearDrawScreen() == 0 && InputKeyValue() == 0)
+	{
+		SetDrawScreen(DX_SCREEN_BACK);		
+		if (key[KEY_INPUT_DOWN] == 1)
 		{
-			break;
-		}	
+			SelectNumber = (SelectNumber + 1) % 3;
+		}
+		if (key[KEY_INPUT_UP] == 1)
+		{
+			SelectNumber = (SelectNumber + 2) % 3;
+		}
+		if (key[KEY_INPUT_DOWN] == 1 || key[KEY_INPUT_UP] == 1)
+		{
+			for (int menu_number = 0; menu_number < 3; menu_number++)
+			{
+				if (menu_number == SelectNumber)
+				{
+					MenuElement[menu_number].menu_pos_x = 80;
+				}
+				else
+					MenuElement[menu_number].menu_pos_x = 100;
+			}
+		}
+		for (int draw_menu = 0; draw_menu < 3; draw_menu++)
+		{
+			DrawFormatString(MenuElement[draw_menu].menu_pos_x, MenuElement[draw_menu].menu_pos_y,
+				GetColor(255, 255, 255), MenuElement[draw_menu].name);
+		}
 	}
-
-	//DrawRotaGraph(480, 720, 0.4, 0, img, true);
-	//WaitTimer(3000);
 
 	DxLib_End();
 	return 0;
 }
-
-void inputTask()
-{
-}
-
-void CalkTask()
-{
-	pos_y -= speed;
-	if (pos_y <= 0)
-		pos_y = 720;
-
-	//switch (sceneState)
-	//{
-	//case 0:
-	//	TittleScebe.CalkTask();
-	//	break;
-	//case 1:
-	//	GameScene.CalkTask();
-	//	break;
-	//}
-}
-
-
-void DrawTask()
-{
-	ClearDrawScreen();
-	SetDrawScreen(DX_SCREEN_BACK);
-
-	DrawRotaGraph(pos_x, pos_y, 0.4, 0.0, img, true);
-
-	//Sleep(1000 / 60);
-
-	ScreenFlip();
-
-}
-
-

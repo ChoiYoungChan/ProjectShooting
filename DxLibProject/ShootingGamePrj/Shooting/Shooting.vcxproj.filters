@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="ソース ファイル\Manager">
-      <UniqueIdentifier>{46e63417-5af8-4e72-b871-493d369bc2cd}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\Source">
       <UniqueIdentifier>{3306c9da-82b7-4344-ade5-5ae2f4488dd1}</UniqueIdentifier>
     </Filter>
@@ -24,6 +21,9 @@
     </Filter>
     <Filter Include="ソース ファイル\Scene\Stage">
       <UniqueIdentifier>{b751fb12-0e77-4033-8f81-56e02a252865}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\Manager">
+      <UniqueIdentifier>{46e63417-5af8-4e72-b871-493d369bc2cd}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +60,18 @@
     <ClCompile Include="MainManager.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Monster.cpp">
+      <Filter>ソース ファイル\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Manager\InputKey.cpp">
+      <Filter>ソース ファイル\Scene\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PlayerBullet.cpp">
+      <Filter>ソース ファイル\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MonsterBullet.cpp">
+      <Filter>ソース ファイル\Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Player.h">
@@ -70,9 +82,6 @@
     </ClInclude>
     <ClInclude Include="Scene\Result.h">
       <Filter>ソース ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="Manager\Singleton.h">
-      <Filter>ソース ファイル\Manager</Filter>
     </ClInclude>
     <ClInclude Include="Scene\BaseSceneController.h">
       <Filter>ソース ファイル\Scene</Filter>
@@ -97,6 +106,21 @@
     </ClInclude>
     <ClInclude Include="MainManager.h">
       <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Manager\Singleton.h">
+      <Filter>ソース ファイル\Scene\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Monster.h">
+      <Filter>ソース ファイル\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Manager\InputKey.h">
+      <Filter>ソース ファイル\Scene\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PlayerBullet.h">
+      <Filter>ソース ファイル\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MonsterBullet.h">
+      <Filter>ソース ファイル\Source</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

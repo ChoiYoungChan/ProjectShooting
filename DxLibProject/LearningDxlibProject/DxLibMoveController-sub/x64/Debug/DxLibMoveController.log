@@ -1,5 +1,4 @@
-﻿  main.cpp
-  Bullet.cpp
-  PlayerController.cpp
+﻿  PlayerController.cpp
+  main.cpp
   コードを生成中...
   DxLibMoveController.vcxproj -> D:\Test\C++\projectcpp\DxLibProject\LearningDxlibProject\DxLibMoveController-sub\x64\Debug\DxLibMoveController.exe
