@@ -3,6 +3,8 @@
 
 #include "DxLib.h"
 #include "Source/Bullet.h"
+#include "Source/Monster.h"
+#include "Source/PlayerController.h"
 
 //======================================================
 //======= namespace
@@ -13,11 +15,11 @@ using namespace std;
 
 void SetWindowMode(int , int);
 void LoadResource();
-void FirstDraw();
 
-void PlayerController(int, int, int, int, int);
-void InputTask();
+void InputTask(int, int, int);
 void DrawTask();
+void CalculateTask();
+void MenuTask();
 
 int key[256];
 
@@ -38,16 +40,18 @@ int InputKeyValue()
 //======================================================
 //=======Global Variable
 
-int player_pos_x = 240, player_pos_y = 600, bullet_pos_y = player_pos_y;
+int player_pos_x = 240, player_pos_y= 600;
 int WINDOW_SIZE_X = 480, WINDOW_SIZE_Y = 720;
-int Player_img, Bullet_img;
+int Monster_img, Monster_Bullet_img;
 
 bullet::Bullet shoot[50];
-int shoot_count = 0;
+monster::Monster enemy[20];
+player::PlayerController Player;
+
+int shoot_count = 0, spawn_count = 0;
 
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
-
 	int PLAYER_MIN_POS_X = (WINDOW_SIZE_X / 2);
 	int PLAYER_MIN_POS_Y = 100;
 	int PLAYER_MAX_POS_X = WINDOW_SIZE_X - 10;
@@ -58,23 +62,20 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 
 	LoadResource();
 	int speed = 15, time_count = 0;
-
-	while (ProcessMessage() == 0 && InputKeyValue() == 0)
+	
+	while (ScreenFlip() == 0 && ProcessMessage() == 0 && InputKeyValue() == 0)
 	{
-		FirstDraw();
 		time_count = GetNowCount();
 
-		InputTask();
+		InputTask(speed, PLAYER_MAX_POS_X, PLAYER_MAX_POS_Y);
+		CalculateTask();
 		DrawTask();
-
-		PlayerController(speed, PLAYER_MIN_POS_X, PLAYER_MIN_POS_Y, PLAYER_MAX_POS_X, PLAYER_MAX_POS_Y);
 
 		int last_time_count = (1000 / 60);
 		last_time_count -= (GetNowCount() - time_count);
-
-		ScreenFlip();
 		Sleep(last_time_count);
 	}
+
 	DxLib_End();
 	return 0;
 }
@@ -86,18 +87,22 @@ void SetWindowMode(int window_size_x, int window_size_y)
 
 void LoadResource()
 {
-	Player_img = LoadGraph("Bullet_0001.png");
-	Bullet_img = LoadGraph("Bullet_0003.png");
+	Monster_img = LoadGraph("Monster_0001.png");
+	Monster_Bullet_img = LoadGraph("Bullet_0005.png");
+
+	enemy[spawn_count].Start(Monster_img, Monster_Bullet_img);
 }
 
-void FirstDraw()
+void InputTask(int speed, int player_max_pos_x, int player_max_pos_y)
 {
-	ClearDrawScreen();
-	SetDrawScreen(DX_SCREEN_BACK);
-}
-
-void PlayerController(int speed, int player_min_pos_x, int player_min_pos_y, int player_max_pos_x, int player_max_pos_y)
-{
+	
+	Player.Initialize(player_max_pos_x,player_max_pos_y, WINDOW_SIZE_X, WINDOW_SIZE_Y);
+	/*
+	for (int count = 0; count < 50; count++)
+	{
+		shoot[count].BulletMovement();
+	
+	
 	if (key[KEY_INPUT_RIGHT] >= 1) {
 		player_pos_x += speed;
 	}
@@ -112,14 +117,14 @@ void PlayerController(int speed, int player_min_pos_x, int player_min_pos_y, int
 	}
 	if (key[KEY_INPUT_Z] >= 1)
 	{
-		shoot[shoot_count].Start(player_pos_x, player_pos_y, speed, Bullet_img);
+		shoot[shoot_count].Start(player_pos_x, player_pos_y, speed, Player_Bullet_img);
 		shoot_count++;
 		if (shoot_count >= 50)
 		{
 			shoot_count = 0;
 		}
 	}
-	DrawRotaGraph(player_pos_x, player_pos_y, 1, 0, Player_img, true);
+
 	if (player_pos_x < 0)
 	{
 		player_pos_x = 10;
@@ -135,17 +140,37 @@ void PlayerController(int speed, int player_min_pos_x, int player_min_pos_y, int
 	if (player_pos_y >= WINDOW_SIZE_Y)
 	{
 		player_pos_y = player_max_pos_y;
-	}
+	}*/
 }
 
-void InputTask()
-{
-
-}
 void DrawTask()
 {
+	ClearDrawScreen();
+	SetDrawScreen(DX_SCREEN_BACK);
+
+	//Player.Draw();
+
 	for (int count = 0; count < 50; count++)
 	{
 		shoot[count].BulletMovement();
 	}
+
+	for (int count = 0; count < 20; count++)
+	{
+		enemy[spawn_count].RandomMovePos();
+		if (enemy[spawn_count].IsInScreen() == 1)
+		{
+			enemy[spawn_count].SpawnPattern();	
+		}
+	}
+}
+
+void CalculateTask()
+{
+	Player.Controller();
+}
+
+void MenuTask()
+{
+
 }
