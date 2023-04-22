@@ -1,9 +1,0 @@
-﻿  main.cpp
-  Bullet.cpp
-  PlayerController.cpp
-  コードを生成中...
-main.obj : error LNK2019: 未解決の外部シンボル "public: void __cdecl monster::Monster::Start(int,int)" (?Start@Monster@monster@@QEAAXHH@Z) が関数 "void __cdecl LoadResource(void)" (?LoadResource@@YAXXZ) で参照されました。
-main.obj : error LNK2019: 未解決の外部シンボル "public: void __cdecl monster::Monster::SpawnPattern(void)" (?SpawnPattern@Monster@monster@@QEAAXXZ) が関数 "void __cdecl DrawTask(void)" (?DrawTask@@YAXXZ) で参照されました。
-main.obj : error LNK2019: 未解決の外部シンボル "public: void __cdecl monster::Monster::RandomMovePos(void)" (?RandomMovePos@Monster@monster@@QEAAXXZ) が関数 "void __cdecl DrawTask(void)" (?DrawTask@@YAXXZ) で参照されました。
-main.obj : error LNK2019: 未解決の外部シンボル "public: bool __cdecl monster::Monster::IsInScreen(void)" (?IsInScreen@Monster@monster@@QEAA_NXZ) が関数 "void __cdecl DrawTask(void)" (?DrawTask@@YAXXZ) で参照されました。
-D:\Test\C++\projectcpp\DxLibProject\LearningDxlibProject\DxLibMoveController\x64\Debug\DxLibMoveController.exe : fatal error LNK1120: 4 件の未解決の外部参照
