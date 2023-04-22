@@ -25,7 +25,7 @@ namespace scene
 			data::GameData::Instance().Stage_Level,
 			data::GameData::Instance().Score);
 		SetFontSize(15);
-		DrawFormatString(250, 400, GetColor(255, 255, 255), "15ïbå„TitleÇ…ñﬂÇËÇ‹Ç∑");
+		DrawFormatString(250, 400, GetColor(255, 255, 255), "Game Over");
 
 		for (int _menu_number = 0; _menu_number < _RESULT_MENU; _menu_number++)
 		{

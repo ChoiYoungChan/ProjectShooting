@@ -1,537 +1,94 @@
-﻿  BaseSceneController.cpp
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Scene\BaseSceneController.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Scene\BaseSceneController.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Scene\Title.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  Option.cpp
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Scene\BaseSceneController.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Scene\Title.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  Result.cpp
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Scene\BaseSceneController.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  StageManager.cpp
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Scene\StageManager.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Stage\Stage.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Scene\BaseSceneController.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Monster.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Bullet.h(44,16): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Player.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  Title.cpp
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Scene\Title.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Scene\BaseSceneController.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  Bullet.cpp
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Bullet.h(44,16): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-  BulletHell.cpp
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\BulletHell.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Bullet.h(44,16): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Monster.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\BulletHell.cpp(92,14): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\BulletHell.cpp(96,21): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\BulletHell.cpp(102,63): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\BulletHell.cpp(103,63): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\BulletHell.cpp(105,32): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\BulletHell.cpp(106,32): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\BulletHell.cpp(123,26): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\BulletHell.cpp(124,26): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Monster.cpp
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Monster.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Monster.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Bullet.h(44,16): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Monster.cpp(96,29): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Monster.cpp(97,29): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Monster.cpp(112,29): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  Result.cpp
+D:\Documents\Project\Project Athena\ProjectShooting\DxLibProject\ShootingGamePrj\Shooting\Game\Scene\BaseSceneController.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
   Player.cpp
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Player.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Player.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Bullet.h(44,16): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-  Stage.cpp
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Stage\Stage.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Stage\Stage.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Scene\BaseSceneController.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Monster.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Bullet.h(44,16): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Player.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  main.cpp
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Scene\BaseSceneController.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  MainManager.cpp
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\MainManager.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Scene\BaseSceneController.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Scene\Title.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  BaseObject.cpp
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Manager\BaseObject.cpp(10,19): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  BulletManager.cpp
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Manager\BulletManager.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Bullet.h(44,16): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Player.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  GameData.cpp
+D:\Documents\Project\Project Athena\ProjectShooting\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Player.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Bullet.h(44,16): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
   InputKey.cpp
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  MonsterManager.cpp
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Manager\MonsterManager.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Monster.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  PlayerManager.cpp
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLib_VC3_21b\DxLib_VC\Include\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Player.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\System.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\Shooting\Game\Source\Bullet.h(44,16): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxDataType.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxDataTypeWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxCompileConfig.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxDataTypeWin.h(1188,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(496,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(985,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(1596,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxFunctionWin.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxFunctionWin.h(164,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2090,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2306,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2508,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2649,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2775,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2978,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3142,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3391,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3634,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3810,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(4311,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(4532,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(4709,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(4933,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\Documents\Project\Project Athena\ProjectShooting\DxLib_VC3_21b\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(5100,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
   코드를 생성하고 있습니다...
-  Shooting.vcxproj -> D:\Study\Git\ProjectCpp\DxLibProject\ShootingGamePrj\x64\Debug\Shooting.exe
+  Shooting.vcxproj -> D:\Documents\Project\Project Athena\ProjectShooting\DxLibProject\ShootingGamePrj\x64\Debug\Shooting.exe
